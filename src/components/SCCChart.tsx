@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import type { Session } from '@/lib/types'
 import { sessionsToPoints, computeCeleration, celerationLabel } from '@/lib/scc'
@@ -14,16 +14,28 @@ export function SCCChart({ sessions, fluencyAim, onAimChange }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [showErrors, setShowErrors] = useState(false)
   const [aimInput, setAimInput] = useState(String(fluencyAim))
+  const [containerWidth, setContainerWidth] = useState(0)
 
   const points = sessionsToPoints(sessions)
   const celeration = computeCeleration(points, showErrors ? 'errorsRpm' : 'correctsRpm')
+
+  // Track container width with ResizeObserver so D3 always has the real pixel width
+  useLayoutEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+    const observer = new ResizeObserver((entries) => {
+      setContainerWidth(entries[0]?.contentRect.width ?? 0)
+    })
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     const svg = svgRef.current
     const container = containerRef.current
     if (!svg || !container) return
 
-    const width = container.clientWidth
+    const width = containerWidth || container.clientWidth
     const height = 420
     const margin = { top: 24, right: 32, bottom: 48, left: 64 }
     const innerW = width - margin.left - margin.right
@@ -209,7 +221,7 @@ export function SCCChart({ sessions, fluencyAim, onAimChange }: Props) {
         .attr('font-size', '9px')
         .text(rpm.toFixed(1))
     })
-  }, [points, fluencyAim, showErrors, celeration])
+  }, [points, fluencyAim, showErrors, celeration, containerWidth])
 
   function handleAimSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -281,9 +293,16 @@ export function SCCChart({ sessions, fluencyAim, onAimChange }: Props) {
 
       {/* Chart */}
       {sessions.length === 0 ? (
-        <div className="flex-1 flex flex-col items-center justify-center text-zinc-500 text-sm gap-2">
+        <div className="flex-1 flex flex-col items-center justify-center text-zinc-500 text-sm gap-3 text-center">
           <p className="text-3xl">📈</p>
-          <p>No sessions yet. Complete and save sessions to see your celeration chart.</p>
+          <p className="text-white font-medium">No Practice sessions yet</p>
+          <p className="max-w-xs text-zinc-400">
+            This chart tracks <span className="text-teal-400 font-medium">SAFMEDS Practice</span> sessions (responses per minute over time).
+          </p>
+          <p className="max-w-xs text-zinc-500 text-xs">
+            The Quiz tab tracks accuracy % and is separate from the celeration chart.
+            Go to the <span className="text-white">Practice</span> tab, complete a 1-minute session, and save it to see data here.
+          </p>
         </div>
       ) : (
         <div ref={containerRef} className="flex-1">
