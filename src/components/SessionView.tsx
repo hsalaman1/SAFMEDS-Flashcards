@@ -3,18 +3,24 @@ import type { Card } from '@/lib/types'
 import { useTimer } from '@/hooks/useTimer'
 import { shuffleArray, cn } from '@/lib/utils'
 import { exportPracticeToXlsx } from '@/lib/xlsx-export'
-import { CheckCircle, XCircle, RefreshCw, RotateCcw, Download } from 'lucide-react'
+import { CheckCircle, XCircle, RefreshCw, RotateCcw, Download, Zap, Keyboard } from 'lucide-react'
 
 interface SessionResult {
   corrects: number
   errors: number
   duration: number
   deckLabel: string
+  /** Per-card results for spaced repetition tracking */
+  cardResults?: { cardId: string; correct: boolean }[]
 }
 
 interface Props {
   activeDeck: Card[]
   onSessionComplete: (result: SessionResult) => void
+  /** When set, practice only these cards (e.g. missed cards from previous session) */
+  overrideDeck?: Card[]
+  /** Callback to clear the override deck */
+  onClearOverride?: () => void
 }
 
 type Phase = 'pre' | 'active' | 'post'
@@ -25,8 +31,9 @@ interface CardState {
   result: 'correct' | 'error' | null
 }
 
-export function SessionView({ activeDeck, onSessionComplete }: Props) {
-  const [phase, setPhase] = useState<Phase>('pre')
+export function SessionView({ activeDeck, onSessionComplete, overrideDeck, onClearOverride }: Props) {
+  const effectiveDeck = overrideDeck && overrideDeck.length > 0 ? overrideDeck : activeDeck
+  const [phase, setPhase] = useState<Phase>(overrideDeck && overrideDeck.length > 0 ? 'pre' : 'pre')
   const [deck, setDeck] = useState<Card[]>([])
   const [cardIndex, setCardIndex] = useState(0)
   const [revealed, setRevealed] = useState(false)
@@ -46,8 +53,36 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
     }
   }, [timerState, phase, sessionDuration])
 
+  // ── Keyboard shortcuts during active phase ──────────────────────
+  useEffect(() => {
+    if (phase !== 'active') return
+
+    function handleKeyDown(e: KeyboardEvent) {
+      // Ignore if user is typing in an input
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
+
+      if (e.code === 'Space' || e.code === 'Enter') {
+        e.preventDefault()
+        if (!revealed) {
+          setRevealed(true)
+        }
+      } else if (revealed) {
+        if (e.code === 'ArrowLeft' || e.key === '1') {
+          e.preventDefault()
+          markResult('error')
+        } else if (e.code === 'ArrowRight' || e.key === '2') {
+          e.preventDefault()
+          markResult('correct')
+        }
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [phase, revealed, deck, cardIndex, results, corrects, errors])
+
   function startSession() {
-    const shuffled = shuffleArray(activeDeck)
+    const shuffled = shuffleArray(effectiveDeck)
     setDeck(shuffled)
     setCardIndex(0)
     setRevealed(false)
@@ -79,7 +114,7 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
     const nextIndex = cardIndex + 1
     if (nextIndex >= deck.length) {
       // Reshuffle and continue (free-operant — can keep going until timer)
-      const reshuffled = shuffleArray(activeDeck)
+      const reshuffled = shuffleArray(effectiveDeck)
       setDeck(reshuffled)
       setCardIndex(0)
     } else {
@@ -96,12 +131,18 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
   }
 
   function saveAndFinish() {
+    const markedResults = results.filter((r) => r.result !== null)
     onSessionComplete({
       corrects,
       errors,
       duration: completedDuration,
-      deckLabel: `All selected (${activeDeck.length} cards)`,
+      deckLabel: overrideDeck ? `Missed cards review (${effectiveDeck.length} cards)` : `All selected (${activeDeck.length} cards)`,
+      cardResults: markedResults.map((r) => ({
+        cardId: r.card.id,
+        correct: r.result === 'correct',
+      })),
     })
+    if (onClearOverride) onClearOverride()
     setPhase('pre')
     reset()
   }
@@ -111,11 +152,33 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
     reset()
   }
 
+  function practiceMissedCards() {
+    const missedCardIds = new Set(
+      results.filter((r) => r.result === 'error').map((r) => r.card.id)
+    )
+    const missedDeck = effectiveDeck.filter((c) => missedCardIds.has(c.id))
+    if (missedDeck.length === 0) return
+
+    // Start a new session immediately with only missed cards
+    const shuffled = shuffleArray(missedDeck)
+    setDeck(shuffled)
+    setCardIndex(0)
+    setRevealed(false)
+    setResults([])
+    setCorrects(0)
+    setErrors(0)
+    setSessionDuration(60)
+    setCompletedDuration(60)
+    setPhase('active')
+    reset()
+    setTimeout(() => start(), 0)
+  }
+
   const currentCard = deck[cardIndex]
 
   // ── PRE-SESSION ──────────────────────────────────────────────────
   if (phase === 'pre') {
-    if (activeDeck.length === 0) {
+    if (effectiveDeck.length === 0) {
       return (
         <div className="flex flex-col items-center justify-center h-full gap-4 text-center">
           <p className="text-5xl">📚</p>
@@ -138,8 +201,14 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
         <div className="rounded-2xl border border-zinc-700 bg-zinc-900 p-6 w-full max-w-sm flex flex-col gap-3">
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Cards in deck</span>
-            <span className="text-white font-medium">{activeDeck.length}</span>
+            <span className="text-white font-medium">{effectiveDeck.length}</span>
           </div>
+          {overrideDeck && overrideDeck.length > 0 && (
+            <div className="flex justify-between text-sm">
+              <span className="text-zinc-400">Mode</span>
+              <span className="text-amber-400 font-medium">Missed Cards Review</span>
+            </div>
+          )}
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Duration</span>
             <span className="text-white font-medium">1 minute</span>
@@ -155,12 +224,22 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
           Cards reshuffle when you reach the end. Session ends after 1 minute.
         </div>
 
-        <button
-          onClick={startSession}
-          className="px-8 py-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg transition-colors shadow-lg"
-        >
-          Start Session
-        </button>
+        <div className="flex gap-3">
+          {overrideDeck && onClearOverride && (
+            <button
+              onClick={onClearOverride}
+              className="px-6 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-medium border border-zinc-700 transition-colors"
+            >
+              Back to Full Deck
+            </button>
+          )}
+          <button
+            onClick={startSession}
+            className="px-8 py-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-semibold text-lg transition-colors shadow-lg"
+          >
+            Start Session
+          </button>
+        </div>
       </div>
     )
   }
@@ -175,6 +254,10 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
     const markedResults = results.filter((r) => r.result !== null)
     const correctCards = markedResults.filter((r) => r.result === 'correct')
     const missedCards = markedResults.filter((r) => r.result === 'error')
+
+    // Deduplicate missed cards by ID (a card might be missed multiple times in reshuffles)
+    const uniqueMissedIds = new Set(missedCards.map((r) => r.card.id))
+    const uniqueMissedCount = uniqueMissedIds.size
 
     function handleExport() {
       exportPracticeToXlsx({
@@ -264,6 +347,15 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
             <Download size={15} />
             Export to Excel
           </button>
+          {uniqueMissedCount > 0 && (
+            <button
+              onClick={practiceMissedCards}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-900/40 hover:bg-amber-800/60 text-amber-300 text-sm font-medium border border-amber-700 transition-colors"
+            >
+              <Zap size={15} />
+              Practice Missed ({uniqueMissedCount})
+            </button>
+          )}
           <button
             onClick={practiceAgain}
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
@@ -356,33 +448,43 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
 
         {/* Action buttons */}
         {!revealed ? (
-          <button
-            onClick={reveal}
-            className="px-8 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-medium border border-zinc-700 transition-colors text-sm"
-          >
-            Flip Card
-          </button>
+          <div className="flex flex-col items-center gap-2">
+            <button
+              onClick={reveal}
+              className="px-8 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-medium border border-zinc-700 transition-colors text-sm"
+            >
+              Flip Card
+            </button>
+            <p className="flex items-center gap-1.5 text-xs text-zinc-600">
+              <Keyboard size={11} /> Space to flip
+            </p>
+          </div>
         ) : (
-          <div className="flex gap-4">
-            <button
-              onClick={() => markResult('error')}
-              className="flex items-center gap-2 px-6 py-3 rounded-xl bg-red-900/40 hover:bg-red-800/60 border border-red-700 text-red-300 font-medium transition-colors"
-            >
-              <XCircle size={18} />
-              Missed
-            </button>
-            <button
-              onClick={() => markResult('correct')}
-              className="flex items-center gap-2 px-6 py-3 rounded-xl bg-green-900/40 hover:bg-green-800/60 border border-green-700 text-green-300 font-medium transition-colors"
-            >
-              <CheckCircle size={18} />
-              Got It
-            </button>
+          <div className="flex flex-col items-center gap-2">
+            <div className="flex gap-4">
+              <button
+                onClick={() => markResult('error')}
+                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-red-900/40 hover:bg-red-800/60 border border-red-700 text-red-300 font-medium transition-colors"
+              >
+                <XCircle size={18} />
+                Missed
+              </button>
+              <button
+                onClick={() => markResult('correct')}
+                className="flex items-center gap-2 px-6 py-3 rounded-xl bg-green-900/40 hover:bg-green-800/60 border border-green-700 text-green-300 font-medium transition-colors"
+              >
+                <CheckCircle size={18} />
+                Got It
+              </button>
+            </div>
+            <p className="flex items-center gap-1.5 text-xs text-zinc-600">
+              <Keyboard size={11} /> ← or 1 = Missed · → or 2 = Got It
+            </p>
           </div>
         )}
 
         <p className="text-xs text-zinc-600">
-          Card {cardIndex + 1} of {deck.length} • {corrects + errors} total responses
+          Card {cardIndex + 1} of {deck.length} · {corrects + errors} total responses
         </p>
       </div>
     </div>
