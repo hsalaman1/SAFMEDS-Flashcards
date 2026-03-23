@@ -24,3 +24,13 @@ export interface AppData {
   sessions: Session[];
   fluencyAim: number;
 }
+
+export interface QuizSession {
+  id: string
+  date: string        // ISO 8601
+  deckLabel: string
+  totalQuestions: number
+  correct: number
+  incorrect: number
+  accuracyPct: number
+}

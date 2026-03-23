@@ -1,9 +1,10 @@
-import type { Card, Session, AppData } from './types'
+import type { Card, Session, AppData, QuizSession } from './types'
 
 const KEYS = {
   cards: 'safmeds_cards',
   sessions: 'safmeds_sessions',
   fluencyAim: 'safmeds_fluency_aim',
+  quizSessions: 'safmeds_quiz_sessions',
 } as const
 
 function parseJson<T>(raw: string | null, fallback: T): T {
@@ -54,6 +55,14 @@ export function importAllData(json: string): AppData {
   saveSessions(data.sessions ?? [])
   saveFluencyAim(data.fluencyAim ?? 80)
   return data
+}
+
+export function loadQuizSessions(): QuizSession[] {
+  return parseJson<QuizSession[]>(localStorage.getItem(KEYS.quizSessions), [])
+}
+
+export function saveQuizSessions(sessions: QuizSession[]): void {
+  localStorage.setItem(KEYS.quizSessions, JSON.stringify(sessions))
 }
 
 export function exportSessionsCSV(sessions: Session[]): string {
