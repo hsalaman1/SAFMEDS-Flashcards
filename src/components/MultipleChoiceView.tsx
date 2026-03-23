@@ -1,4 +1,5 @@
-import { CheckCircle, XCircle, RotateCcw, Trophy, Download, Clock } from 'lucide-react'
+import { useEffect } from 'react'
+import { CheckCircle, XCircle, RotateCcw, Trophy, Download, Clock, Zap, Keyboard } from 'lucide-react'
 import type { Card } from '@/lib/types'
 import { useQuiz, formatElapsed } from '@/hooks/useQuiz'
 import { exportQuizToXlsx } from '@/lib/xlsx-export'
@@ -7,9 +8,19 @@ import { cn } from '@/lib/utils'
 interface Props {
   activeDeck: Card[]
   onSessionSaved?: () => void
+  /** When set, quiz only these cards (e.g. missed cards from previous quiz) */
+  overrideDeck?: Card[]
+  /** Callback to clear the override deck */
+  onClearOverride?: () => void
+  /** Callback to report per-card results for spaced repetition */
+  onQuizComplete?: (cardResults: { cardId: string; correct: boolean }[]) => void
+  /** Callback to set override deck for quiz missed cards */
+  onSetOverrideDeck?: (cards: Card[]) => void
 }
 
-export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
+export function MultipleChoiceView({ activeDeck, onSessionSaved, overrideDeck, onClearOverride, onQuizComplete, onSetOverrideDeck }: Props) {
+  const effectiveDeck = overrideDeck && overrideDeck.length > 0 ? overrideDeck : activeDeck
+
   const {
     phase,
     currentQuestion,
@@ -24,11 +35,38 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
     nextQuestion,
     saveSession,
     resetQuiz,
-  } = useQuiz(activeDeck)
+  } = useQuiz(effectiveDeck)
+
+  // ── Keyboard shortcuts ──────────────────────────────────────────
+  useEffect(() => {
+    if (phase !== 'active') return
+
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return
+
+      if (!isAnswered && currentQuestion) {
+        // 1-4 to select choices
+        const num = parseInt(e.key, 10)
+        if (num >= 1 && num <= 4 && num <= currentQuestion.choices.length) {
+          e.preventDefault()
+          selectAnswer(currentQuestion.choices[num - 1])
+        }
+      } else if (isAnswered) {
+        // Enter or Space to go to next question
+        if (e.code === 'Enter' || e.code === 'Space') {
+          e.preventDefault()
+          nextQuestion()
+        }
+      }
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [phase, isAnswered, currentQuestion, selectAnswer, nextQuestion])
 
   // ── PRE ──────────────────────────────────────────────────────────
   if (phase === 'pre') {
-    const notEnough = activeDeck.length < 4
+    const notEnough = effectiveDeck.length < 4
     return (
       <div className="flex flex-col items-center justify-center h-full gap-6">
         <div className="text-center">
@@ -42,11 +80,17 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
         <div className="rounded-2xl border border-zinc-700 bg-zinc-900 p-6 w-full max-w-sm flex flex-col gap-3">
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Cards in deck</span>
-            <span className="text-white font-medium">{activeDeck.length}</span>
+            <span className="text-white font-medium">{effectiveDeck.length}</span>
           </div>
+          {overrideDeck && overrideDeck.length > 0 && (
+            <div className="flex justify-between text-sm">
+              <span className="text-zinc-400">Mode</span>
+              <span className="text-amber-400 font-medium">Missed Cards Review</span>
+            </div>
+          )}
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Questions</span>
-            <span className="text-white font-medium">{activeDeck.length} (one per card)</span>
+            <span className="text-white font-medium">{effectiveDeck.length} (one per card)</span>
           </div>
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Format</span>
@@ -64,13 +108,23 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           </p>
         )}
 
-        <button
-          onClick={startQuiz}
-          disabled={notEnough}
-          className="px-8 py-3 rounded-xl bg-teal-600 hover:bg-teal-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-lg transition-colors shadow-lg"
-        >
-          Start Quiz
-        </button>
+        <div className="flex gap-3">
+          {overrideDeck && onClearOverride && (
+            <button
+              onClick={onClearOverride}
+              className="px-6 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-medium border border-zinc-700 transition-colors"
+            >
+              Back to Full Deck
+            </button>
+          )}
+          <button
+            onClick={startQuiz}
+            disabled={notEnough}
+            className="px-8 py-3 rounded-xl bg-teal-600 hover:bg-teal-500 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold text-lg transition-colors shadow-lg"
+          >
+            Start Quiz
+          </button>
+        </div>
       </div>
     )
   }
@@ -90,6 +144,15 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
 
     function handleSave() {
       saveSession()
+      // Report per-card results for spaced repetition
+      if (onQuizComplete) {
+        onQuizComplete(
+          results.map((r) => ({
+            cardId: r.question.card.id,
+            correct: r.wasCorrect,
+          }))
+        )
+      }
       onSessionSaved?.()
       resetQuiz()
     }
@@ -97,7 +160,7 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
     function handleExport() {
       exportQuizToXlsx({
         date: new Date().toISOString(),
-        deckLabel: `All selected (${activeDeck.length} cards)`,
+        deckLabel: `All selected (${effectiveDeck.length} cards)`,
         totalQuestions: total,
         correct,
         incorrect: total - correct,
@@ -113,6 +176,20 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           timeSeconds: r.timeMs / 1000,
         })),
       })
+    }
+
+    function quizMissedCards() {
+      const missedCardIds = new Set(missed.map((r) => r.question.card.id))
+      const missedDeck = activeDeck.filter((c) => missedCardIds.has(c.id))
+      if (missedDeck.length < 4) {
+        // Not enough missed cards for a quiz — include some correct ones to reach 4-card minimum
+        const extraNeeded = 4 - missedDeck.length
+        const correctCards = activeDeck.filter((c) => !missedCardIds.has(c.id))
+        const extras = correctCards.slice(0, extraNeeded)
+        missedDeck.push(...extras)
+      }
+      resetQuiz()
+      if (onSetOverrideDeck) onSetOverrideDeck(missedDeck)
     }
 
     return (
@@ -178,6 +255,15 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
             <Download size={15} />
             Export to Excel
           </button>
+          {missed.length > 0 && (
+            <button
+              onClick={quizMissedCards}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-900/40 hover:bg-amber-800/60 text-amber-300 text-sm font-medium border border-amber-700 transition-colors"
+            >
+              <Zap size={15} />
+              Quiz Missed ({missed.length})
+            </button>
+          )}
           <button
             onClick={resetQuiz}
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
@@ -249,7 +335,7 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
 
         {/* 4 choices */}
         <div className="grid grid-cols-1 gap-3 w-full max-w-xl">
-          {choices.map((choice) => {
+          {choices.map((choice, idx) => {
             const isSelected = selected === choice
             const isCorrect = choice === correctTerm
 
@@ -276,7 +362,12 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
                   isAnswered && 'cursor-default'
                 )}
               >
-                <span>{choice}</span>
+                <span>
+                  <span className="inline-flex items-center justify-center w-5 h-5 rounded text-xs bg-zinc-700/50 text-zinc-400 mr-2.5 font-mono">
+                    {idx + 1}
+                  </span>
+                  {choice}
+                </span>
                 {isAnswered && isCorrect && (
                   <CheckCircle size={16} className="text-green-400 flex-shrink-0 ml-2" />
                 )}
@@ -287,6 +378,12 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
             )
           })}
         </div>
+
+        {/* Keyboard hint */}
+        <p className="flex items-center gap-1.5 text-xs text-zinc-600">
+          <Keyboard size={11} />
+          {isAnswered ? 'Enter to continue' : '1-4 to select'}
+        </p>
 
         {/* Next button */}
         {isAnswered && (

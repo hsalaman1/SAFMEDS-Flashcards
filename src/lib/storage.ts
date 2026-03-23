@@ -1,10 +1,12 @@
-import type { Card, Session, AppData, QuizSession } from './types'
+import type { Card, Session, AppData, QuizSession, CardPerformance, StreakData } from './types'
 
 const KEYS = {
   cards: 'safmeds_cards',
   sessions: 'safmeds_sessions',
   fluencyAim: 'safmeds_fluency_aim',
   quizSessions: 'safmeds_quiz_sessions',
+  cardPerformance: 'safmeds_card_performance',
+  streak: 'safmeds_streak',
 } as const
 
 function parseJson<T>(raw: string | null, fallback: T): T {
@@ -63,6 +65,26 @@ export function loadQuizSessions(): QuizSession[] {
 
 export function saveQuizSessions(sessions: QuizSession[]): void {
   localStorage.setItem(KEYS.quizSessions, JSON.stringify(sessions))
+}
+
+// ── Card Performance (Spaced Repetition) ──────────────────────────
+
+export function loadCardPerformance(): CardPerformance[] {
+  return parseJson<CardPerformance[]>(localStorage.getItem(KEYS.cardPerformance), [])
+}
+
+export function saveCardPerformance(perf: CardPerformance[]): void {
+  localStorage.setItem(KEYS.cardPerformance, JSON.stringify(perf))
+}
+
+// ── Streak Data ───────────────────────────────────────────────────
+
+export function loadStreak(): StreakData {
+  return parseJson<StreakData>(localStorage.getItem(KEYS.streak), { activeDates: [] })
+}
+
+export function saveStreak(data: StreakData): void {
+  localStorage.setItem(KEYS.streak, JSON.stringify(data))
 }
 
 export function exportSessionsCSV(sessions: Session[]): string {

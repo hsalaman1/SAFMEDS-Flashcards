@@ -37,3 +37,19 @@ export interface QuizSession {
   questionsPerMin: number
   totalSeconds: number
 }
+
+/** Spaced repetition: per-card performance tracking (Leitner boxes) */
+export interface CardPerformance {
+  cardId: string
+  box: number          // Leitner box 1-5 (1 = needs most review)
+  timesCorrect: number
+  timesMissed: number
+  lastSeen: string     // ISO 8601
+  nextReview: string   // ISO 8601 — when card is due
+}
+
+/** Daily streak tracking */
+export interface StreakData {
+  /** Dates on which at least one session was completed (YYYY-MM-DD) */
+  activeDates: string[]
+}
