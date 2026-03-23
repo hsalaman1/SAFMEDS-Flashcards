@@ -1,6 +1,7 @@
-import { CheckCircle, XCircle, RotateCcw, Trophy } from 'lucide-react'
+import { CheckCircle, XCircle, RotateCcw, Trophy, Download, Clock } from 'lucide-react'
 import type { Card } from '@/lib/types'
-import { useQuiz } from '@/hooks/useQuiz'
+import { useQuiz, formatElapsed } from '@/hooks/useQuiz'
+import { exportQuizToXlsx } from '@/lib/xlsx-export'
 import { cn } from '@/lib/utils'
 
 interface Props {
@@ -17,6 +18,7 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
     selected,
     isAnswered,
     results,
+    elapsed,
     startQuiz,
     selectAnswer,
     nextQuestion,
@@ -33,7 +35,7 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           <p className="text-5xl mb-4">🎯</p>
           <h2 className="text-2xl font-bold text-white mb-1">Multiple Choice Quiz</h2>
           <p className="text-zinc-400 text-sm max-w-xs">
-            See the definition — pick the correct term from 4 choices.
+            See the definition — pick the correct term from 4 choices. Your speed and accuracy are both tracked.
           </p>
         </div>
 
@@ -49,6 +51,10 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           <div className="flex justify-between text-sm">
             <span className="text-zinc-400">Format</span>
             <span className="text-white font-medium">Definition → Term</span>
+          </div>
+          <div className="flex justify-between text-sm">
+            <span className="text-zinc-400">Tracking</span>
+            <span className="text-white font-medium">Accuracy + Speed (correct/min)</span>
           </div>
         </div>
 
@@ -74,7 +80,13 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
     const correct = results.filter((r) => r.wasCorrect).length
     const total = results.length
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0
+    const minutes = elapsed > 0 ? elapsed / 60 : 1
+    const correctPerMin = parseFloat((correct / minutes).toFixed(1))
+    const questionsPerMin = parseFloat((total / minutes).toFixed(1))
     const missed = results.filter((r) => !r.wasCorrect)
+    const avgTimeSec = total > 0
+      ? (results.reduce((sum, r) => sum + r.timeMs, 0) / total / 1000).toFixed(1)
+      : '0'
 
     function handleSave() {
       saveSession()
@@ -82,25 +94,69 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
       resetQuiz()
     }
 
+    function handleExport() {
+      exportQuizToXlsx({
+        date: new Date().toISOString(),
+        deckLabel: `All selected (${activeDeck.length} cards)`,
+        totalQuestions: total,
+        correct,
+        incorrect: total - correct,
+        accuracyPct: pct,
+        correctPerMin,
+        questionsPerMin,
+        totalSeconds: elapsed,
+        cardResults: results.map((r) => ({
+          term: r.question.correctTerm,
+          definition: r.question.card.answer,
+          yourAnswer: r.selected,
+          correct: r.wasCorrect,
+          timeSeconds: r.timeMs / 1000,
+        })),
+      })
+    }
+
     return (
-      <div className="flex flex-col items-center justify-center h-full gap-6">
+      <div className="flex flex-col items-center h-full gap-5 overflow-y-auto py-2">
         <div className="text-center">
-          <p className="text-5xl mb-3">
+          <p className="text-5xl mb-2">
             {pct >= 80 ? '🏆' : pct >= 60 ? '👍' : '📚'}
           </p>
           <h2 className="text-2xl font-bold text-white">Quiz Complete</h2>
-          <p className="text-zinc-400 text-sm mt-1">{total} questions answered</p>
+          <p className="text-zinc-400 text-sm mt-1">
+            {total} questions · {formatElapsed(elapsed)}
+          </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 w-full max-w-md">
-          <StatCard label="Correct" value={String(correct)} color="text-green-400" />
-          <StatCard label="Incorrect" value={String(total - correct)} color="text-red-400" />
+        {/* Stats grid */}
+        <div className="grid grid-cols-2 gap-3 w-full max-w-md">
           <StatCard label="Accuracy" value={`${pct}%`} color="text-teal-400" />
+          <StatCard label="Correct / min" value={String(correctPerMin)} color="text-green-400" sub="fluency score" />
+          <StatCard label="Questions / min" value={String(questionsPerMin)} color="text-blue-400" sub="total speed" />
+          <StatCard label="Avg time / card" value={`${avgTimeSec}s`} color="text-zinc-300" />
         </div>
 
+        {/* Correct / Incorrect counts */}
+        <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-4 w-full max-w-md text-sm">
+          <div className="flex justify-between mb-1">
+            <span className="text-zinc-400">Correct</span>
+            <span className="text-green-400 font-medium">{correct}</span>
+          </div>
+          <div className="flex justify-between mb-1">
+            <span className="text-zinc-400">Incorrect</span>
+            <span className="text-red-400 font-medium">{total - correct}</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-zinc-400">Total time</span>
+            <span className="text-white font-medium">{formatElapsed(elapsed)}</span>
+          </div>
+        </div>
+
+        {/* Missed cards */}
         {missed.length > 0 && (
           <div className="w-full max-w-md">
-            <p className="text-sm text-zinc-400 mb-2 font-medium">Missed items ({missed.length}):</p>
+            <p className="text-sm text-zinc-400 mb-2 font-medium">
+              Needs work ({missed.length} card{missed.length !== 1 ? 's' : ''}):
+            </p>
             <div className="rounded-xl border border-zinc-700 bg-zinc-900 divide-y divide-zinc-800 max-h-48 overflow-y-auto">
               {missed.map((r, i) => (
                 <div key={i} className="p-3 text-xs">
@@ -113,7 +169,15 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           </div>
         )}
 
-        <div className="flex gap-3">
+        {/* Action buttons */}
+        <div className="flex flex-wrap gap-3 justify-center pb-4">
+          <button
+            onClick={handleExport}
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
+          >
+            <Download size={15} />
+            Export to Excel
+          </button>
           <button
             onClick={resetQuiz}
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
@@ -142,9 +206,15 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
 
   return (
     <div className="flex flex-col h-full gap-4">
-      {/* Progress header */}
-      <div className="flex items-center justify-between text-sm text-zinc-400">
-        <span>Question {questionIndex + 1} of {totalQuestions}</span>
+      {/* Header: progress + timer + score */}
+      <div className="flex items-center justify-between text-sm">
+        <span className="text-zinc-400">
+          Question {questionIndex + 1} of {totalQuestions}
+        </span>
+        <span className="flex items-center gap-1.5 text-zinc-300 font-mono tabular-nums">
+          <Clock size={13} className="text-zinc-500" />
+          {formatElapsed(elapsed)}
+        </span>
         <span className="flex items-center gap-3">
           <span className="flex items-center gap-1 text-green-400">
             <CheckCircle size={14} />
@@ -218,7 +288,7 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
           })}
         </div>
 
-        {/* Next button — only after answering */}
+        {/* Next button */}
         {isAnswered && (
           <button
             onClick={nextQuestion}
@@ -232,11 +302,22 @@ export function MultipleChoiceView({ activeDeck, onSessionSaved }: Props) {
   )
 }
 
-function StatCard({ label, value, color }: { label: string; value: string; color: string }) {
+function StatCard({
+  label,
+  value,
+  color,
+  sub,
+}: {
+  label: string
+  value: string
+  color: string
+  sub?: string
+}) {
   return (
     <div className="rounded-xl border border-zinc-700 bg-zinc-900 p-4 text-center">
       <p className={cn('text-2xl font-bold tabular-nums', color)}>{value}</p>
       <p className="text-xs text-zinc-500 mt-1">{label}</p>
+      {sub && <p className="text-xs text-zinc-600 mt-0.5">{sub}</p>}
     </div>
   )
 }

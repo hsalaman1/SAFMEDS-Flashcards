@@ -33,4 +33,7 @@ export interface QuizSession {
   correct: number
   incorrect: number
   accuracyPct: number
+  correctPerMin: number
+  questionsPerMin: number
+  totalSeconds: number
 }

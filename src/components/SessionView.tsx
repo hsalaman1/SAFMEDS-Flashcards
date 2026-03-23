@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import type { Card } from '@/lib/types'
 import { useTimer } from '@/hooks/useTimer'
 import { shuffleArray, cn } from '@/lib/utils'
-import { CheckCircle, XCircle, RefreshCw, RotateCcw } from 'lucide-react'
+import { exportPracticeToXlsx } from '@/lib/xlsx-export'
+import { CheckCircle, XCircle, RefreshCw, RotateCcw, Download } from 'lucide-react'
 
 interface SessionResult {
   corrects: number
@@ -171,11 +172,34 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
     const eRpm = parseFloat((errors / minutes).toFixed(1))
     const tRpm = parseFloat(((corrects + errors) / minutes).toFixed(1))
 
+    const markedResults = results.filter((r) => r.result !== null)
+    const correctCards = markedResults.filter((r) => r.result === 'correct')
+    const missedCards = markedResults.filter((r) => r.result === 'error')
+
+    function handleExport() {
+      exportPracticeToXlsx({
+        date: new Date().toISOString(),
+        deckLabel: `All selected (${activeDeck.length} cards)`,
+        corrects,
+        errors,
+        duration: completedDuration,
+        correctsRpm: cRpm,
+        errorsRpm: eRpm,
+        totalRpm: tRpm,
+        cardResults: markedResults.map((r) => ({
+          term: r.card.term,
+          definition: r.card.answer,
+          result: r.result === 'correct' ? 'Correct' : 'Missed',
+        })),
+      })
+    }
+
     return (
-      <div className="flex flex-col items-center justify-center h-full gap-6">
+      <div className="flex flex-col items-center h-full gap-5 overflow-y-auto py-2">
         <div className="text-center">
-          <p className="text-5xl mb-3">🎯</p>
+          <p className="text-5xl mb-2">🎯</p>
           <h2 className="text-2xl font-bold text-white">Session Complete</h2>
+          <p className="text-zinc-400 text-sm mt-1">{completedDuration}s · {markedResults.length} cards answered</p>
         </div>
 
         <div className="grid grid-cols-3 gap-4 w-full max-w-md">
@@ -199,7 +223,47 @@ export function SessionView({ activeDeck, onSessionComplete }: Props) {
           </div>
         </div>
 
-        <div className="flex gap-3">
+        {/* Missed cards */}
+        {missedCards.length > 0 && (
+          <div className="w-full max-w-md">
+            <p className="text-sm text-zinc-400 mb-2 font-medium">
+              Needs work ({missedCards.length} card{missedCards.length !== 1 ? 's' : ''}):
+            </p>
+            <div className="rounded-xl border border-zinc-700 bg-zinc-900 divide-y divide-zinc-800 max-h-40 overflow-y-auto">
+              {missedCards.map((r, i) => (
+                <div key={i} className="p-3 text-xs">
+                  <p className="text-white font-medium">{r.card.term}</p>
+                  <p className="text-zinc-500 mt-0.5 line-clamp-2">{r.card.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Correct cards — collapsed by default */}
+        {correctCards.length > 0 && (
+          <div className="w-full max-w-md">
+            <p className="text-sm text-zinc-400 mb-2 font-medium">
+              <span className="text-green-400">✓</span> Got it ({correctCards.length}):
+            </p>
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 divide-y divide-zinc-800 max-h-32 overflow-y-auto">
+              {correctCards.map((r, i) => (
+                <div key={i} className="px-3 py-2 text-xs text-zinc-500">
+                  {r.card.term}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex flex-wrap gap-3 justify-center pb-4">
+          <button
+            onClick={handleExport}
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
+          >
+            <Download size={15} />
+            Export to Excel
+          </button>
           <button
             onClick={practiceAgain}
             className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white text-sm font-medium border border-zinc-700 transition-colors"
