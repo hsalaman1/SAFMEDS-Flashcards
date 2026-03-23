@@ -3,7 +3,7 @@ import { useCards } from '@/hooks/useCards'
 import { useSessions } from '@/hooks/useSessions'
 import { CardLibrary } from '@/components/CardLibrary'
 import { SessionView } from '@/components/SessionView'
-import { MultipleChoiceView } from '@/components/MultipleChoiceView'
+import { QuizModeSelector } from '@/components/QuizModeSelector'
 import { HistoryView } from '@/components/HistoryView'
 import { SCCChart } from '@/components/SCCChart'
 import { cn } from '@/lib/utils'
@@ -93,7 +93,7 @@ export default function App() {
           <SessionView activeDeck={activeDeck} onSessionComplete={handleSessionComplete} />
         )}
         {tab === 'quiz' && (
-          <MultipleChoiceView activeDeck={activeDeck} />
+          <QuizModeSelector activeDeck={activeDeck} />
         )}
         {tab === 'history' && (
           <HistoryView

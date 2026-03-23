@@ -1,10 +1,11 @@
-import type { Card, Session, AppData, QuizSession } from './types'
+import type { Card, Session, AppData, QuizSession, PromptQuizSession } from './types'
 
 const KEYS = {
   cards: 'safmeds_cards',
   sessions: 'safmeds_sessions',
   fluencyAim: 'safmeds_fluency_aim',
   quizSessions: 'safmeds_quiz_sessions',
+  promptQuizSessions: 'safmeds_prompt_quiz_sessions',
 } as const
 
 function parseJson<T>(raw: string | null, fallback: T): T {
@@ -63,6 +64,14 @@ export function loadQuizSessions(): QuizSession[] {
 
 export function saveQuizSessions(sessions: QuizSession[]): void {
   localStorage.setItem(KEYS.quizSessions, JSON.stringify(sessions))
+}
+
+export function loadPromptQuizSessions(): PromptQuizSession[] {
+  return parseJson<PromptQuizSession[]>(localStorage.getItem(KEYS.promptQuizSessions), [])
+}
+
+export function savePromptQuizSessions(sessions: PromptQuizSession[]): void {
+  localStorage.setItem(KEYS.promptQuizSessions, JSON.stringify(sessions))
 }
 
 export function exportSessionsCSV(sessions: Session[]): string {
