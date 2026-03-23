@@ -2,9 +2,13 @@ import { useState, useCallback } from 'react'
 import type { Card } from '@/lib/types'
 import { loadCards, saveCards } from '@/lib/storage'
 import { generateId } from '@/lib/utils'
+import builtinCards from '@/data/bcba-terms.json'
 
 export function useCards() {
-  const [cards, setCards] = useState<Card[]>(() => loadCards())
+  const [cards, setCards] = useState<Card[]>(() => {
+    const saved = loadCards()
+    return saved.length > 0 ? saved : (builtinCards as Card[])
+  })
 
   const updateCards = useCallback((updated: Card[]) => {
     setCards(updated)
