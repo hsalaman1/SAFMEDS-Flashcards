@@ -1,0 +1,4482 @@
+[
+  {
+    "id": "builtin-1",
+    "term": "2nd Order Schedule",
+    "answer": "A schedule of reinforcement in which the reinforced response is another schedule: FR 10 (VR 3: S)",
+    "chapter": 13,
+    "termNumber": 1,
+    "included": false
+  },
+  {
+    "id": "builtin-2",
+    "term": "Chain Schedule",
+    "answer": "Two or more schedules are presented successively each with its own signal. A reinforcer is given only at the end of the sequence (FR10-FI1’-VR20-Reinforcer)",
+    "chapter": 13,
+    "termNumber": 2,
+    "included": false
+  },
+  {
+    "id": "builtin-3",
+    "term": "Escape Extinction",
+    "answer": "Extinction of a negatively reinforced behavior.  Withholding escape.",
+    "chapter": 24,
+    "termNumber": 3,
+    "included": false
+  },
+  {
+    "id": "builtin-4",
+    "term": "Extinction Side-Effects",
+    "answer": "Extinction burst, emotional behavior, aggression, increase in variety of topographies, increase in intensity of behavior",
+    "chapter": 24,
+    "termNumber": 4,
+    "included": false
+  },
+  {
+    "id": "builtin-5",
+    "term": "FD - Fixed duration",
+    "answer": "A schedule of reinforcement in which the reinforcer is contingent on sustaining a behavior for a fixed amount of time.",
+    "chapter": 13,
+    "termNumber": 5,
+    "included": false
+  },
+  {
+    "id": "builtin-6",
+    "term": "FI- Fixed Interval",
+    "answer": "Reinforcer delivered after the first response after a fixed amount of time has elapsed.  Produces a scalloped rate of responding",
+    "chapter": 13,
+    "termNumber": 6,
+    "included": false
+  },
+  {
+    "id": "builtin-7",
+    "term": "Forced Choice Preference Assessment (paired item)",
+    "answer": "Present pairs of reinforcers and note which is selected.  Pair each reinforcer with all others on the list of possible reinforcers.",
+    "chapter": 11,
+    "termNumber": 7,
+    "included": false
+  },
+  {
+    "id": "builtin-8",
+    "term": "FR-Fixed Ratio",
+    "answer": "Reinforcer delivered after fixed number of responses.  Produces steady, high rate of response with pauses after reinforcement",
+    "chapter": 13,
+    "termNumber": 8,
+    "included": false
+  },
+  {
+    "id": "builtin-9",
+    "term": "FT- Fixed Time",
+    "answer": "A reinforcer is delivered after a fixed time , irrespective of  behavior.",
+    "chapter": 13,
+    "termNumber": 9,
+    "included": false
+  },
+  {
+    "id": "builtin-10",
+    "term": "Mixed Schedule",
+    "answer": "Two or more independent schedules that are presented successively but each does not have its own signal.  Independent schedules are those that program their own schedule of reinforcement. (Mix FR 10 FI 2')",
+    "chapter": 13,
+    "termNumber": 10,
+    "included": false
+  },
+  {
+    "id": "builtin-11",
+    "term": "Post-Reinforcement Pause",
+    "answer": "A brief pause of responding immediately after reinforcement under fixed-ratio or variable ratio schedules.  Is sometimes called the pre-ratio pause, as the pause duration is determined by the size of the upcoming ratio.",
+    "chapter": 13,
+    "termNumber": 11,
+    "included": false
+  },
+  {
+    "id": "builtin-12",
+    "term": "Progressive Ratio",
+    "answer": "Ratio Schedule in which the ratio size gradually increases over time.  This schedule is sometimes used to assess reinforcer effectiveness.  To do so, the \"break point\" is identified - last completed ratio.",
+    "chapter": 13,
+    "termNumber": 12,
+    "included": false
+  },
+  {
+    "id": "builtin-13",
+    "term": "Progressive ratio break point",
+    "answer": "In a PR schedule, the break point is the last ratio size completed before the organism stops responding.  In reinforcer assessments, the higher the break point, the more effective is the reinforcer.",
+    "chapter": 13,
+    "termNumber": 13,
+    "included": false
+  },
+  {
+    "id": "builtin-14",
+    "term": "Resistance to Extinction",
+    "answer": "The extent to which behavior persists when the maintaining reinforcer is withheld.  Abbreviation:  RTE",
+    "chapter": 24,
+    "termNumber": 14,
+    "included": false
+  },
+  {
+    "id": "builtin-15",
+    "term": "Resistance to extinction:  schedule effects",
+    "answer": "Extinction after dense schedules (FR 1):  rapid.  Extinction after thin schedules (VR 100):  slow",
+    "chapter": 24,
+    "termNumber": 15,
+    "included": false
+  },
+  {
+    "id": "builtin-16",
+    "term": "Schedule Induced (adjunctive) Behavior.",
+    "answer": "Behavior that seems to appear because it is under a schedule of reinforcement. E.g. Some organisms will exhibit aggression under FR 50 schedules of food delivery, rats will exhibit copious drinking when exposed to FI 1 schedules of food delivery.",
+    "chapter": 13,
+    "termNumber": 16,
+    "included": false
+  },
+  {
+    "id": "builtin-17",
+    "term": "Schedule induced aggression example",
+    "answer": "Pigeons responding under an FR 100 schedule of food delivery will aggress towards other pigeons upon the offset of access to food.",
+    "chapter": 13,
+    "termNumber": 17,
+    "included": false
+  },
+  {
+    "id": "builtin-18",
+    "term": "Schedule of reinforcement",
+    "answer": "A rule that specifies when a reinforcer will be delivered.",
+    "chapter": 13,
+    "termNumber": 18,
+    "included": false
+  },
+  {
+    "id": "builtin-19",
+    "term": "Schedule Thinning",
+    "answer": "Gradually decreasing the rate of reinforcement.  In a FR schedule, the FR size increases.  In a FI schedule, the time requirement increases.",
+    "chapter": 13,
+    "termNumber": 19,
+    "included": false
+  },
+  {
+    "id": "builtin-20",
+    "term": "Sensory Extinction",
+    "answer": "Extinction of a behavior maintained by sensory reinforcers.  The sensory reinforcers are withheld.",
+    "chapter": 24,
+    "termNumber": 20,
+    "included": false
+  },
+  {
+    "id": "builtin-21",
+    "term": "Simple Schedules of Reinforcement",
+    "answer": "Single schedules such as FR, VR, FI, VI, FT, VT, FD, VD",
+    "chapter": 13,
+    "termNumber": 21,
+    "included": false
+  },
+  {
+    "id": "builtin-22",
+    "term": "Social Extinction",
+    "answer": "Extinction of a behavior maintained by social reinforcers.  Withholding social reinforcement.",
+    "chapter": 24,
+    "termNumber": 22,
+    "included": false
+  },
+  {
+    "id": "builtin-23",
+    "term": "Spontaneous Recovery",
+    "answer": "Following an extinction session, a temporary re-appearance of the behavior in the beginning of the next extinction session. It is thought that the re-appearance is due to the relative novelty of the \"beginning of the session\" that was only briefly experie",
+    "chapter": 24,
+    "termNumber": 23,
+    "included": false
+  },
+  {
+    "id": "builtin-24",
+    "term": "Tandem Schedule",
+    "answer": "Two or more schedules that are presented successively, but there is no signal for each. A reinforcer is given only at the end of the sequence",
+    "chapter": 13,
+    "termNumber": 24,
+    "included": false
+  },
+  {
+    "id": "builtin-25",
+    "term": "VD - Variable duration",
+    "answer": "A schedule of reinforcement in which the reinforcer is contingent on sustaining a behavior for a variable  amount of time.",
+    "chapter": 13,
+    "termNumber": 25,
+    "included": false
+  },
+  {
+    "id": "builtin-26",
+    "term": "VI-Variable Interval",
+    "answer": "Reinforcement delivered after the first response after an average amount of time has elapsed.  Produces a steady, medium rate of response with little pausing.",
+    "chapter": 13,
+    "termNumber": 26,
+    "included": false
+  },
+  {
+    "id": "builtin-27",
+    "term": "VR-Variable Ratio",
+    "answer": "Reinforcement delivered after average number of responses.  Produces a steady, very high rate of response with brief, if any, pauses after reinforcement",
+    "chapter": 13,
+    "termNumber": 27,
+    "included": false
+  },
+  {
+    "id": "builtin-28",
+    "term": "VT- Variable Time",
+    "answer": "A reinforcer is delivered after a variable amount of time (average) irrespective of behavior.",
+    "chapter": 13,
+    "termNumber": 28,
+    "included": false
+  },
+  {
+    "id": "builtin-29",
+    "term": "Abative effect",
+    "answer": "When a stimulus causes an immediate weakening of a response.  Term applies to the effect of an S-delta or SDP.",
+    "chapter": 17,
+    "termNumber": 29,
+    "included": false
+  },
+  {
+    "id": "builtin-30",
+    "term": "Abolishing Operations",
+    "answer": "1. Decreases the reinforcing effectiveness of some stimulus\n2. Decreases the strength of the behavior that has produced that stimulus in the past",
+    "chapter": 16,
+    "termNumber": 30,
+    "included": false
+  },
+  {
+    "id": "builtin-31",
+    "term": "Adjusting Ratio",
+    "answer": "Ratio schedule in which size of the ratio increases as responding becomes more rapid and consistent, but decreases when responding deteriorates.",
+    "chapter": 13,
+    "termNumber": 31,
+    "included": false
+  },
+  {
+    "id": "builtin-32",
+    "term": "Adventitious Reinforcement",
+    "answer": "Refers to accidental reinforcement, results in superstitious behavior.  In this kind of reinforcement, the reinforcer is not produced by the response, but nontheless occurs after it.  Ex:  Pitcher wears socks and has good game, then wears sock at all game",
+    "chapter": 11,
+    "termNumber": 32,
+    "included": false
+  },
+  {
+    "id": "builtin-33",
+    "term": "Alternating Treating (multi-element) Design",
+    "answer": "Two or more treatments with their own signal, alternated across time - usually in the same day.  Changes in conditions are not dependent on stability.",
+    "chapter": 8,
+    "termNumber": 33,
+    "included": false
+  },
+  {
+    "id": "builtin-34",
+    "term": "Antecedent",
+    "answer": "Stimulus before the behavior",
+    "chapter": 2,
+    "termNumber": 34,
+    "included": false
+  },
+  {
+    "id": "builtin-35",
+    "term": "Antecedent Manipulation",
+    "answer": "Adding or removing antecedents that evoke behaviors.  Include MO, SD, response effort",
+    "chapter": 26,
+    "termNumber": 35,
+    "included": false
+  },
+  {
+    "id": "builtin-36",
+    "term": "Antecedent Manipulations",
+    "answer": "1. Establishing/abolishing Operation\n2. Present SD for appropriate behavior\n3. Remove SDs for inappropriate behavior\n4. Increase response effort for inappropriate behavior",
+    "chapter": 26,
+    "termNumber": 36,
+    "included": false
+  },
+  {
+    "id": "builtin-37",
+    "term": "AO example of Tx of self stim",
+    "answer": "Provide vibration toys to decrease head banging;  self stim toys to decrease range of self stim",
+    "chapter": 18,
+    "termNumber": 37,
+    "included": false
+  },
+  {
+    "id": "builtin-38",
+    "term": "Artificial v.s. Natural Contingencies",
+    "answer": "Given a choice, a behavioral programmer should select contingencies that approximate those in the natural environment, rather than artificial contingencies.  Where artificial contingencies must be used, however, they should be changed to more normal   contingencies whenever possible.",
+    "chapter": 30,
+    "termNumber": 38,
+    "included": false
+  },
+  {
+    "id": "builtin-39",
+    "term": "Audience",
+    "answer": "The individual(s) who provides the reinforcement for VB.  The audience is an SD for the VB but does not determine the specific form.",
+    "chapter": 18,
+    "termNumber": 39,
+    "included": false
+  },
+  {
+    "id": "builtin-40",
+    "term": "Augmentive communication system",
+    "answer": "Systems used to supplement or replace vocalization, signing, or writing (e.g., Light talker, Proloquo, Dynavox)",
+    "chapter": 18,
+    "termNumber": 40,
+    "included": false
+  },
+  {
+    "id": "builtin-41",
+    "term": "Autoclitic",
+    "answer": "VB that is used to modify the effect of other VB on the listener (\"You are moving really slowly\" - really is the autoclitic)",
+    "chapter": 18,
+    "termNumber": 41,
+    "included": false
+  },
+  {
+    "id": "builtin-42",
+    "term": "Automatic reinforcement/punishment",
+    "answer": "A reinforcer/punisherthat is produced by the behavior without the participation of other people (i.e., \"response produced\").  For example, echolalia produces sounds that may maintain the behavior.  It can be either a reinforcer or punisher.",
+    "chapter": 27,
+    "termNumber": 42,
+    "included": false
+  },
+  {
+    "id": "builtin-43",
+    "term": "Avoidance behavior",
+    "answer": "Avoidance behavior is reinforced by the postponement or avoidance of an aversive stimulus (negative reinforcer).",
+    "chapter": 12,
+    "termNumber": 43,
+    "included": false
+  },
+  {
+    "id": "builtin-44",
+    "term": "Backup Reinforcer",
+    "answer": "A reinforcer that is obtained by exchanging a token for it in token systems",
+    "chapter": 28,
+    "termNumber": 44,
+    "included": false
+  },
+  {
+    "id": "builtin-45",
+    "term": "Backward Chaining",
+    "answer": "Teaching a sequence of responses by initially training the last response of the chain, the second to last and the last, etc.  Reinforcer is delivered after the required number of steps are completed.",
+    "chapter": 23,
+    "termNumber": 45,
+    "included": false
+  },
+  {
+    "id": "builtin-46",
+    "term": "Baseline",
+    "answer": "Pre-intervention assessment that is used to refine recording procedures, design the intervention and provide data with which to compare intervention data when evaluating intervention effects.",
+    "chapter": 7,
+    "termNumber": 46,
+    "included": false
+  },
+  {
+    "id": "builtin-47",
+    "term": "Behavior change agent monitoring:  Variables that determine how often",
+    "answer": "1. How dangerous is the behavior\n2. Frequency of behavior\n3. How fluent is behavior change agent in implementing the program",
+    "chapter": 14,
+    "termNumber": 47,
+    "included": false
+  },
+  {
+    "id": "builtin-48",
+    "term": "Behavior contrast:  negative",
+    "answer": "When a treated behavior increases, and the same untreated behavior in another situation decreases.  In the laboratory, contrast is studied in multiple schedules.",
+    "chapter": 24,
+    "termNumber": 48,
+    "included": false
+  },
+  {
+    "id": "builtin-49",
+    "term": "Behavior contrast:  positive",
+    "answer": "When a treated behavior decreases (e.g., ext or punishment), and the same untreated behavior in another situation increases.  In the laboratory, contrast is studied in multiple schedules.",
+    "chapter": 24,
+    "termNumber": 49,
+    "included": false
+  },
+  {
+    "id": "builtin-50",
+    "term": "Behavior Definitions",
+    "answer": "Observable and measurable description of behavior",
+    "chapter": 3,
+    "termNumber": 50,
+    "included": false
+  },
+  {
+    "id": "builtin-51",
+    "term": "Behavioral assessment:  goal",
+    "answer": "Identify the function of behavior",
+    "chapter": 27,
+    "termNumber": 51,
+    "included": false
+  },
+  {
+    "id": "builtin-52",
+    "term": "Behavioral explanation of self stim",
+    "answer": "The behavior is maintained by the production of sensory stimuli.",
+    "chapter": 27,
+    "termNumber": 52,
+    "included": false
+  },
+  {
+    "id": "builtin-53",
+    "term": "Behavioral Goal",
+    "answer": "Includes specific behaviors but not specific criteria for success.  Should be age-appropriate.",
+    "chapter": 3,
+    "termNumber": 53,
+    "included": false
+  },
+  {
+    "id": "builtin-54",
+    "term": "Behavioral Objective (six elements)",
+    "answer": "Precise description of when a program will be successful:  Includes measure, criterion for success (e.g., how many sessions in a row), antecedent, behavior, and consequences (schedule of reinforcement) when the program is completed.  Also includes the due date.",
+    "chapter": 3,
+    "termNumber": 54,
+    "included": false
+  },
+  {
+    "id": "builtin-55",
+    "term": "Behavioral Rehearsal",
+    "answer": "Practicing a skill under stimulated conditions that approximate those in the natural environment.  Use the typical teaching techniques such as prompts, fading, chaining, and reinforcement.",
+    "chapter": 21,
+    "termNumber": 55,
+    "included": false
+  },
+  {
+    "id": "builtin-56",
+    "term": "Behavioral view of “sensory defensiveness”",
+    "answer": "Tactile stimuli are negative reinforcers",
+    "chapter": null,
+    "termNumber": 56,
+    "included": false
+  },
+  {
+    "id": "builtin-57",
+    "term": "Categories of functions",
+    "answer": "Positive reinforcement:  Automatic and Socially mediated\n\nNegative reinforcement:  Automatic and socially mediated",
+    "chapter": 27,
+    "termNumber": 57,
+    "included": false
+  },
+  {
+    "id": "builtin-58",
+    "term": "Chaining",
+    "answer": "Systematically linking together individual skills into a larger chain of skills.",
+    "chapter": 23,
+    "termNumber": 58,
+    "included": false
+  },
+  {
+    "id": "builtin-59",
+    "term": "Changing Criterion",
+    "answer": "A design in which criterion in reinforcement is systematically changed.  Control is shown when changes in behavior shadow changes in criterion.",
+    "chapter": 9,
+    "termNumber": 59,
+    "included": false
+  },
+  {
+    "id": "builtin-60",
+    "term": "Choice Availability",
+    "answer": "Extent to which clients are given choices about their lives and events therein.  When choices are provided, fewer problem behaviors may be exhibited.",
+    "chapter": null,
+    "termNumber": 60,
+    "included": false
+  },
+  {
+    "id": "builtin-61",
+    "term": "Choice measure",
+    "answer": "1. Provide choice of  >= 2 options\n2. Calculate the allocation of behavior (# responses to Option #1/# responses to all options) - can be computed as a %",
+    "chapter": 4,
+    "termNumber": 61,
+    "included": false
+  },
+  {
+    "id": "builtin-62",
+    "term": "COD",
+    "answer": "Change over delay - when a concurrent superstition occurs, a delay is programmed after the first behavior occurs to eliminate the superstition.",
+    "chapter": null,
+    "termNumber": 62,
+    "included": false
+  },
+  {
+    "id": "builtin-63",
+    "term": "Collateral Measures",
+    "answer": "Measures of behaviors other than the primary target behaviors",
+    "chapter": 4,
+    "termNumber": 63,
+    "included": false
+  },
+  {
+    "id": "builtin-64",
+    "term": "Competency based training",
+    "answer": "The kind of training that is essential in staff training and management.  This training involves a needs assessment, learning objectives, performance criteria, training procedures (instruction, simulations, in vivo training), and on-line feedback.  Training systems observe the principles of behavior that are found in BCBA class.",
+    "chapter": null,
+    "termNumber": 64,
+    "included": false
+  },
+  {
+    "id": "builtin-65",
+    "term": "Complete Behavioral Support Plan",
+    "answer": "4 Elements:  motivational operations, discriminative control, replacement behaviors and consequence manipulations",
+    "chapter": null,
+    "termNumber": 65,
+    "included": false
+  },
+  {
+    "id": "builtin-66",
+    "term": "Component Analysis",
+    "answer": "Taking treatment apart and identifying which component is the effective component.  Can be accomplished by slowly taking each element out -or- by starting with a single element and slowly adding each element.",
+    "chapter": 10,
+    "termNumber": 66,
+    "included": false
+  },
+  {
+    "id": "builtin-67",
+    "term": "Concept Formation",
+    "answer": "Generalization within a class of stimuli and discrimination between classes. E.g.. Learning to identify all canines as dogs and learning to discriminate between dogs and cats",
+    "chapter": 17,
+    "termNumber": 67,
+    "included": false
+  },
+  {
+    "id": "builtin-68",
+    "term": "Concurrent superstition",
+    "answer": "When a behavior (e.g., tantrum) is maintained by the reinforcer for another behavior (e.g., mand for food).  Occurs when the 2 behaviors occur close in time.",
+    "chapter": 11,
+    "termNumber": 68,
+    "included": false
+  },
+  {
+    "id": "builtin-69",
+    "term": "Conditional discrimination",
+    "answer": "A stimulus is a discriminative stimulus depending on the presence or absence of a 2nd stimulus.  Example:  if blue light is on, then the triangle is the SD;  if a red light is on, then the square is the SD.",
+    "chapter": 17,
+    "termNumber": 69,
+    "included": false
+  },
+  {
+    "id": "builtin-70",
+    "term": "Conditional probability",
+    "answer": "The likelihood of an event occurring, given another event (e.g., how often a behavior occurs, given an antecedent). Formula:  #A--> B/ # A  OR # B --> C/# B.",
+    "chapter": 27,
+    "termNumber": 70,
+    "included": false
+  },
+  {
+    "id": "builtin-71",
+    "term": "Conditioned Motivating Operations (CMO)",
+    "answer": "Have the same 2 effects that motivative operations have, but are due to a conditioning history",
+    "chapter": 16,
+    "termNumber": 71,
+    "included": false
+  },
+  {
+    "id": "builtin-72",
+    "term": "Conditioned suppression:  ABA",
+    "answer": "When the signal of an upcoming aversive event is on (you are waiting in the Dr office), ongoing responding is suppressed (it is hard to have an intelligent conversation in the DR office).",
+    "chapter": 14,
+    "termNumber": 72,
+    "included": false
+  },
+  {
+    "id": "builtin-73",
+    "term": "Conditioned suppression:  EAB",
+    "answer": "Animal responds under VI schedule for food.  Periodically, a stimulus comes on and then is soon followed by a shock.  When the stimulus is on, responding for food is suppressed.",
+    "chapter": 14,
+    "termNumber": 73,
+    "included": false
+  },
+  {
+    "id": "builtin-74",
+    "term": "Confounding Variable",
+    "answer": "Uncontrolled variables or events that influence the outcome of an experiment.  Often accompany the IV and thus are indistinguishable from the IV.",
+    "chapter": 7,
+    "termNumber": 74,
+    "included": false
+  },
+  {
+    "id": "builtin-75",
+    "term": "Consequence",
+    "answer": "Event that occurs after the behavior",
+    "chapter": 1,
+    "termNumber": 75,
+    "included": true
+  },
+  {
+    "id": "builtin-76",
+    "term": "Contextual Variables (setting events)",
+    "answer": "Variables that are more generally present stimuli that are not necessarily manipulated as part of a behavior change program.  May influence the efficacy of behavioral procedures.  Ex: medical status, task variation, number of staff, etc.",
+    "chapter": null,
+    "termNumber": 76,
+    "included": false
+  },
+  {
+    "id": "builtin-77",
+    "term": "Contiguity",
+    "answer": "This refers to the temporal relation between a behavior and consequence or other stimuli.  If there is \"contiguity\" then they are close in time",
+    "chapter": 2,
+    "termNumber": 77,
+    "included": false
+  },
+  {
+    "id": "builtin-78",
+    "term": "Contingency (behavioral)",
+    "answer": "Dependency among behavior and stimuli or among stimuli.  Can be expressed as an If-Then Statement.",
+    "chapter": 2,
+    "termNumber": 78,
+    "included": false
+  },
+  {
+    "id": "builtin-79",
+    "term": "Contingency Contract",
+    "answer": "1. Agreement between client and programmer that states specific behaviors by the client and what consequences will be forthcoming for each behavior.  2. Data collection  3. Written",
+    "chapter": 28,
+    "termNumber": 79,
+    "included": false
+  },
+  {
+    "id": "builtin-80",
+    "term": "Contingency Shaped Behavior",
+    "answer": "Behavior that occurs because it has resulted from direct exposure to contingencies.",
+    "chapter": 18,
+    "termNumber": 80,
+    "included": false
+  },
+  {
+    "id": "builtin-81",
+    "term": "Contingent Effort",
+    "answer": "Any one of several procedures that involve requiring, contingent on a response, client to engage in an effortful activity.",
+    "chapter": 14,
+    "termNumber": 81,
+    "included": false
+  },
+  {
+    "id": "builtin-82",
+    "term": "Contingent Observation",
+    "answer": "Contingent on Behavior, the person is removed from ongoing activities and permitted to observe same.",
+    "chapter": 14,
+    "termNumber": 82,
+    "included": false
+  },
+  {
+    "id": "builtin-83",
+    "term": "Continuous Reinforcement",
+    "answer": "Refers to a FR1 schedule wherein every response produces a reinforcer",
+    "chapter": 13,
+    "termNumber": 83,
+    "included": false
+  },
+  {
+    "id": "builtin-84",
+    "term": "Continuous vs. Sampling Recording",
+    "answer": "Continuous - uninterrupted observation and recording so that every instance of behavior will be detected\nSampling - behavior observed and recorded occasionally",
+    "chapter": 4,
+    "termNumber": 84,
+    "included": false
+  },
+  {
+    "id": "builtin-85",
+    "term": "Counter control",
+    "answer": "Attempts by the subjects of behavior programming to change the behavior of the programmer.  For example, students learned to train their teachers to deliver more praise and positive comments.",
+    "chapter": null,
+    "termNumber": 85,
+    "included": false
+  },
+  {
+    "id": "builtin-86",
+    "term": "Curriculum adjustment options",
+    "answer": "1. Content - make tasks more functional\n2. Variation - include new tasks and maintenance tasks\n3. Student choice of tasks\n4. Pace of task presentation\n5. Interspersal - use high-p and low-p instructions;  preferred and non-preferred",
+    "chapter": 26,
+    "termNumber": 86,
+    "included": false
+  },
+  {
+    "id": "builtin-87",
+    "term": "Cycle",
+    "answer": "A description of behavior that specifies when a behavior begins and when it ends.",
+    "chapter": 4,
+    "termNumber": 87,
+    "included": false
+  },
+  {
+    "id": "builtin-88",
+    "term": "Data",
+    "answer": "The results of measurement usually in a quantifiable form (e.g., # aggressions in a day, the rate of correct vs incorrect flash cards).",
+    "chapter": 6,
+    "termNumber": 88,
+    "included": false
+  },
+  {
+    "id": "builtin-89",
+    "term": "Data path",
+    "answer": "The line connecting two successive data points.",
+    "chapter": 6,
+    "termNumber": 89,
+    "included": true
+  },
+  {
+    "id": "builtin-90",
+    "term": "Dead Man’s Test",
+    "answer": "Test for evaluating whether a goal or objective is viable.  If a dead man can do it, then it may not be a functional, useful goal.",
+    "chapter": 3,
+    "termNumber": 90,
+    "included": false
+  },
+  {
+    "id": "builtin-91",
+    "term": "Deductive Processes",
+    "answer": "Testing hypothesis by collecting data in systematic manipulation format.",
+    "chapter": 2,
+    "termNumber": 91,
+    "included": false
+  },
+  {
+    "id": "builtin-92",
+    "term": "Delayed Imitation",
+    "answer": "When a person imitates a model, but the model is no longer present.",
+    "chapter": 21,
+    "termNumber": 92,
+    "included": false
+  },
+  {
+    "id": "builtin-93",
+    "term": "Delayed Prompts",
+    "answer": "Prompts are given after a period of time elapses after the SD (gives the person a chance to perform independently)",
+    "chapter": 17,
+    "termNumber": 93,
+    "included": false
+  },
+  {
+    "id": "builtin-94",
+    "term": "Dependent Group Contingency",
+    "answer": "Reinforcer for a group depends on the behavior of a single person or small # of people",
+    "chapter": 28,
+    "termNumber": 94,
+    "included": false
+  },
+  {
+    "id": "builtin-95",
+    "term": "Deprivation",
+    "answer": "Absence of reinforcer for a period of time,  thereby making that event more effective as a reinforcer.",
+    "chapter": 11,
+    "termNumber": 95,
+    "included": false
+  },
+  {
+    "id": "builtin-96",
+    "term": "Descriptive assessment:  limits",
+    "answer": "1. Sometimes inaccurate conclusions\n2. Function might change over time",
+    "chapter": 27,
+    "termNumber": 96,
+    "included": false
+  },
+  {
+    "id": "builtin-97",
+    "term": "Descriptive assessment:  strengths",
+    "answer": "1. Easy for practitioner\n2. No risk\n3. Little training is needed",
+    "chapter": 27,
+    "termNumber": 97,
+    "included": false
+  },
+  {
+    "id": "builtin-98",
+    "term": "Design combination:  example",
+    "answer": "1. Mult BL with w/d on one of the BL\n2. Mult BL with ATD in the Tx condition",
+    "chapter": 10,
+    "termNumber": 98,
+    "included": false
+  },
+  {
+    "id": "builtin-99",
+    "term": "Differential Reinforcement",
+    "answer": "When a reinforcement contingency depends on 1. presence or absence of a feature of a response, as in response differentiation -or-  2. the presence or absence of an antecedent stimulus, as in discrimination training",
+    "chapter": 25,
+    "termNumber": 99,
+    "included": false
+  },
+  {
+    "id": "builtin-100",
+    "term": "Differential reinforcement example of Tx of self stim",
+    "answer": "Reinforce appropriate playing with toys to decrease rocking.",
+    "chapter": 25,
+    "termNumber": 100,
+    "included": false
+  },
+  {
+    "id": "builtin-101",
+    "term": "Descriptive assessment",
+    "answer": "Direct contact with the person: Direct observation, collect ABC data, narrative recording, naturalistic observation",
+    "chapter": 27,
+    "termNumber": 101,
+    "included": false
+  },
+  {
+    "id": "builtin-102",
+    "term": "Direct Instruction",
+    "answer": "A method of teaching material such as reading and math that involves scripted presentations, active student participation, and immediate feedback from the teacher.",
+    "chapter": null,
+    "termNumber": 102,
+    "included": false
+  },
+  {
+    "id": "builtin-103",
+    "term": "Direct Replication",
+    "answer": "Repeating the exact experiment with the same (intra-subject) or similar subjects (inter-subject).  When used with the same participant, allows for assessment of internal validity.",
+    "chapter": 10,
+    "termNumber": 103,
+    "included": false
+  },
+  {
+    "id": "builtin-104",
+    "term": "Discrepency analysis",
+    "answer": "Compare data with those of norm group to determine changeworthiness of current behavior",
+    "chapter": 27,
+    "termNumber": 104,
+    "included": false
+  },
+  {
+    "id": "builtin-105",
+    "term": "Discrete Trials",
+    "answer": "An instructional method wherein the client is presented with formal opportunity to perform behavior.  Consequence is provided depending on behavior.",
+    "chapter": 4,
+    "termNumber": 105,
+    "included": false
+  },
+  {
+    "id": "builtin-106",
+    "term": "Discriminated Operant",
+    "answer": "Behavior that requires some \"opportunity\" or specific antecedent to occur.  Ex: to follow directions, there must first be a direction given.",
+    "chapter": 2,
+    "termNumber": 106,
+    "included": false
+  },
+  {
+    "id": "builtin-107",
+    "term": "Discrimination",
+    "answer": "Refers to a change in observed behavior when antecedent stimuli are changed",
+    "chapter": 17,
+    "termNumber": 107,
+    "included": false
+  },
+  {
+    "id": "builtin-108",
+    "term": "Discrimination Training",
+    "answer": "Reinforcing a behavior in the presence of some stimulus and extinguishing (or punishing) the behavior in the absence of the stimulus.",
+    "chapter": 17,
+    "termNumber": 108,
+    "included": false
+  },
+  {
+    "id": "builtin-109",
+    "term": "Distal MO example",
+    "answer": "Child abused by visiting parent over weekend --> problem behavior Monday at school",
+    "chapter": 16,
+    "termNumber": 109,
+    "included": false
+  },
+  {
+    "id": "builtin-110",
+    "term": "Divided attention",
+    "answer": "When attention is diverted to another person, and not just withheld",
+    "chapter": 27,
+    "termNumber": 110,
+    "included": false
+  },
+  {
+    "id": "builtin-111",
+    "term": "Documentation of behavioral services:  elements",
+    "answer": "1. Date\n2. Start time\n3. End time\n4. Service note\n5. Beh analyst name\n6. Parent/client signature",
+    "chapter": null,
+    "termNumber": 111,
+    "included": false
+  },
+  {
+    "id": "builtin-112",
+    "term": "DRA",
+    "answer": "Differential Reinforcement of Alternative Behavior.  Reinforcer is delivered for a response that is an alternative way of obtaining reinforcement.  The response is chosen because it is an alternative to the target behavior but not necessarily incompatible.",
+    "chapter": 25,
+    "termNumber": 112,
+    "included": false
+  },
+  {
+    "id": "builtin-113",
+    "term": "DRD",
+    "answer": "Differential reinforcement of diminishing rates.  Full session DRL wherein the maximum number of behaviors decrease over time.",
+    "chapter": 25,
+    "termNumber": 113,
+    "included": false
+  },
+  {
+    "id": "builtin-114",
+    "term": "DRH",
+    "answer": "Differential Reinforcement of High Rates of Behaviors.  Reinforcer is delivered for more than a fixed number of responses in a time period  -or-  Reinforcer is delivered after an IRT less than some criterion amount of time.  Used to increase behavior.",
+    "chapter": 25,
+    "termNumber": 114,
+    "included": false
+  },
+  {
+    "id": "builtin-115",
+    "term": "DRI",
+    "answer": "Differential Reinforcement of Incompatible behavior.   Reinforcer is delivered when a response occurs for a fixed amount of time.  The response is chosen because it is incompatible with the target behavior.",
+    "chapter": 25,
+    "termNumber": 115,
+    "included": false
+  },
+  {
+    "id": "builtin-116",
+    "term": "DRL",
+    "answer": "Differential Reinforcement of Low Rates of Behavior.  Reinforcer is delivered for no more than a fixed number of responses in a time period  -or-  Reinforcer is delivered after an IRT greater than some criterion amount of time.  Used to decrease behavior.",
+    "chapter": 25,
+    "termNumber": 116,
+    "included": false
+  },
+  {
+    "id": "builtin-117",
+    "term": "DRO",
+    "answer": "Differential Reinforcement of Other Behavior.  Reinforcer is delivered when a response does not occur for a fixed (or varied in VDRO) amount of time.",
+    "chapter": 25,
+    "termNumber": 117,
+    "included": false
+  },
+  {
+    "id": "builtin-118",
+    "term": "DRO:  Momentary",
+    "answer": "MDRO 5 min = observe person after 5 minutes, and if the decel target behavior is not occurring at the moment, then deliver some stimulus",
+    "chapter": 25,
+    "termNumber": 118,
+    "included": false
+  },
+  {
+    "id": "builtin-119",
+    "term": "Echoic",
+    "answer": "1. Form determined by prior verbal stimulus \n2. Point to point correspondence (PTP)\n3. Formal similarity \n4. Maintained by generalized conditioned reinforcer\n5. Audience is part of SD, but does not determine the form",
+    "chapter": 18,
+    "termNumber": 119,
+    "included": false
+  },
+  {
+    "id": "builtin-120",
+    "term": "Echoic (controlling variables)",
+    "answer": "Verbal stimulus determines form + audience (SD) + GCR.  PTP and similar forms.",
+    "chapter": 18,
+    "termNumber": 120,
+    "included": false
+  },
+  {
+    "id": "builtin-121",
+    "term": "Ecological Changes",
+    "answer": "Changing schedules, staffing patterns, activities, diet, etc.",
+    "chapter": 26,
+    "termNumber": 121,
+    "included": false
+  },
+  {
+    "id": "builtin-122",
+    "term": "Effective",
+    "answer": "Characteristic of ABA.  Changes in behavior that are large enough to impact a person's life.",
+    "chapter": 1,
+    "termNumber": 122,
+    "included": false
+  },
+  {
+    "id": "builtin-123",
+    "term": "Environment",
+    "answer": "Entire constellation of stimuli that can affect a person (includes both internal/external)",
+    "chapter": 2,
+    "termNumber": 123,
+    "included": false
+  },
+  {
+    "id": "builtin-124",
+    "term": "Environmental Changes to Reduce the Need for Tx",
+    "answer": "Making changes in the environment that will reduce the need for a behavior program: find interesting job, satisfying places to live/recreate, network of friends, provide choices",
+    "chapter": 26,
+    "termNumber": 124,
+    "included": false
+  },
+  {
+    "id": "builtin-125",
+    "term": "Errorless Discrimination",
+    "answer": "Teaching Discrimination with few or no errors. Ex:  Fading in S-delta (incorrect stimulus) -or- superimposing a new set of stimuli on an already learned discrimination then fading out the already learned stimuli",
+    "chapter": 17,
+    "termNumber": 125,
+    "included": false
+  },
+  {
+    "id": "builtin-126",
+    "term": "Escape behavior",
+    "answer": "Escape behavior is behavior that is reinforced by terminating a stimulus (negative reinforcer)",
+    "chapter": 12,
+    "termNumber": 126,
+    "included": false
+  },
+  {
+    "id": "builtin-127",
+    "term": "Escape/Avoidance hierarchy",
+    "answer": "A sequence of steps that increase in aversive properties.  Used in \"tolerance training\"",
+    "chapter": 12,
+    "termNumber": 127,
+    "included": false
+  },
+  {
+    "id": "builtin-128",
+    "term": "Evaluate effectiveness of a behavior program",
+    "answer": "1. Data on the graph\n2. Social validity",
+    "chapter": 7,
+    "termNumber": 128,
+    "included": false
+  },
+  {
+    "id": "builtin-129",
+    "term": "Event Recording",
+    "answer": "# of occurrences of a response are recorded.",
+    "chapter": 4,
+    "termNumber": 129,
+    "included": false
+  },
+  {
+    "id": "builtin-130",
+    "term": "Evocative effect",
+    "answer": "When a stimulus causes an immediate strengthening of a response.  Term applies to the effect of an SD, CS, or US.",
+    "chapter": 2,
+    "termNumber": 130,
+    "included": false
+  },
+  {
+    "id": "builtin-131",
+    "term": "Example of changing curriculum to Tx behavior problem",
+    "answer": "Task difficulty linked to problem behavior --> reduce difficult tasks or teach mand for help",
+    "chapter": 26,
+    "termNumber": 131,
+    "included": false
+  },
+  {
+    "id": "builtin-132",
+    "term": "Example of verbal behavior under multiple control (e.g., impure tact)",
+    "answer": "Kid who tacts candy that is evoked by deprivation of candy.  Thus, the strength of \"candy\" is determined by the sight of candy and candy deprivation.",
+    "chapter": 27,
+    "termNumber": 132,
+    "included": false
+  },
+  {
+    "id": "builtin-133",
+    "term": "Exclusion Timeout",
+    "answer": "Timeout from reinforcement in which the person is removed from the immediate situation, but kept in the general area.",
+    "chapter": 15,
+    "termNumber": 133,
+    "included": false
+  },
+  {
+    "id": "builtin-134",
+    "term": "Experimental Design",
+    "answer": "A sequence of conditions that permit conclusions about whether the changes in behavior resulted from the intervention",
+    "chapter": 7,
+    "termNumber": 134,
+    "included": false
+  },
+  {
+    "id": "builtin-135",
+    "term": "Explain behavior in behavior-analytic terms",
+    "answer": "1. Mentalistic:  Aggression is caused by low self esteem\n2. Behavior analytic:  Aggression is caused by a history of attention deliverd after the behavior",
+    "chapter": 2,
+    "termNumber": 135,
+    "included": false
+  },
+  {
+    "id": "builtin-136",
+    "term": "External Validity",
+    "answer": "Extent to which intervention can be successfully applied to other people, other situations,  or other behaviors.  Also termed generality.",
+    "chapter": 7,
+    "termNumber": 136,
+    "included": false
+  },
+  {
+    "id": "builtin-137",
+    "term": "Extinction",
+    "answer": "Withholding a stimulus that normally occurs after a behavior, resulting in a decrease in the rate of behavior.",
+    "chapter": 24,
+    "termNumber": 137,
+    "included": false
+  },
+  {
+    "id": "builtin-138",
+    "term": "Extinction-Induced Aggression",
+    "answer": "Aggressive behavior that occurs when a behavior is being extinguished.",
+    "chapter": 24,
+    "termNumber": 138,
+    "included": false
+  },
+  {
+    "id": "builtin-139",
+    "term": "Extra-stimulus Prompts",
+    "answer": "Those prompts that are \"outside\" the SD, such as physical guidance, to prompt hand washing",
+    "chapter": 17,
+    "termNumber": 139,
+    "included": false
+  },
+  {
+    "id": "builtin-140",
+    "term": "Facial Screening",
+    "answer": "Briefly covering the eyes or restricting visual input in some way, contingent on a behavior",
+    "chapter": 14,
+    "termNumber": 140,
+    "included": false
+  },
+  {
+    "id": "builtin-141",
+    "term": "Fading",
+    "answer": "The gradual withdrawal of prompts, such that the SD alone evokes the desired behavior",
+    "chapter": 17,
+    "termNumber": 141,
+    "included": false
+  },
+  {
+    "id": "builtin-142",
+    "term": "Fair Pair",
+    "answer": "1. ID the inappropriate behavior and program a procedure to directly decrease it\n2. ID a replacement behavior and teach it: \nThese 2 elements constitute a \"fair pair\"",
+    "chapter": 3,
+    "termNumber": 142,
+    "included": true
+  },
+  {
+    "id": "builtin-143",
+    "term": "Feedback",
+    "answer": "Providing information contingent on a behavior.  Can function as reinforcement or punishment, depending on the nature of the information.",
+    "chapter": null,
+    "termNumber": 143,
+    "included": false
+  },
+  {
+    "id": "builtin-144",
+    "term": "Forward Chaining",
+    "answer": "Teaching a sequence of responses by initially training the first response of the chain, then the first and second, etc.  Reinforcer is presented after the required number of steps are completed.",
+    "chapter": 22,
+    "termNumber": 144,
+    "included": false
+  },
+  {
+    "id": "builtin-145",
+    "term": "Free Operant",
+    "answer": "Behavior that can occur at anytime, given some motivation.  Is not strongly tied to a particular SD",
+    "chapter": 17,
+    "termNumber": 145,
+    "included": false
+  },
+  {
+    "id": "builtin-146",
+    "term": "Frequency of monitoring depends on…",
+    "answer": "Depends on safety concerns and stage of program:  newer programs should be monitored more often.",
+    "chapter": 15,
+    "termNumber": 146,
+    "included": false
+  },
+  {
+    "id": "builtin-147",
+    "term": "Function-altering",
+    "answer": "The concept that conditioning (and rules) alters the function of stimuli.  For example, discrimination training creates SDs.  And, reinforcement creates EO s.",
+    "chapter": null,
+    "termNumber": 147,
+    "included": false
+  },
+  {
+    "id": "builtin-148",
+    "term": "Function-altering:  Operant conditioning",
+    "answer": "Reinforcement alters the function of neutral stimuli and results in the emergence of SDs and EO s.",
+    "chapter": null,
+    "termNumber": 148,
+    "included": false
+  },
+  {
+    "id": "builtin-149",
+    "term": "Function-altering:  Respondent conditioning",
+    "answer": "The pairing of a NS and US results in a change of the NS function - it becomes a CS.",
+    "chapter": null,
+    "termNumber": 149,
+    "included": false
+  },
+  {
+    "id": "builtin-150",
+    "term": "Function-altering:  Rules",
+    "answer": "Rules create new CSs, SDs, conditioned reinforcers, EO s, etc. through a function-altering process.",
+    "chapter": null,
+    "termNumber": 150,
+    "included": false
+  },
+  {
+    "id": "builtin-151",
+    "term": "Functional analysis best practice:  how many controls to use",
+    "answer": "Use one control for each test (pair wise)",
+    "chapter": 27,
+    "termNumber": 151,
+    "included": false
+  },
+  {
+    "id": "builtin-152",
+    "term": "Functional analysis best practice:  natural vs contrived environments",
+    "answer": "Natural",
+    "chapter": 27,
+    "termNumber": 152,
+    "included": false
+  },
+  {
+    "id": "builtin-153",
+    "term": "Functional analysis best practice:  role of supplemental information",
+    "answer": "To develop an hypothesis and inform the FA",
+    "chapter": 27,
+    "termNumber": 153,
+    "included": false
+  },
+  {
+    "id": "builtin-154",
+    "term": "Functional analysis best practice:  what to do with tangible condition",
+    "answer": "If descriptive assessment does not indicate behavior occurs to produce tangibles, then don't include in test conditions.",
+    "chapter": 27,
+    "termNumber": 154,
+    "included": false
+  },
+  {
+    "id": "builtin-155",
+    "term": "Functional analysis models",
+    "answer": "AB and ABC",
+    "chapter": 27,
+    "termNumber": 155,
+    "included": false
+  },
+  {
+    "id": "builtin-156",
+    "term": "Functional analysis on high intensity behavior",
+    "answer": "1. Look at the latency to the first response in the condition.  Then end the condition.  \n2. Or, just study precursors.",
+    "chapter": 27,
+    "termNumber": 156,
+    "included": false
+  },
+  {
+    "id": "builtin-157",
+    "term": "Functional analysis review:  most common function",
+    "answer": "1. Escape from task\n2. Attention",
+    "chapter": 27,
+    "termNumber": 157,
+    "included": false
+  },
+  {
+    "id": "builtin-158",
+    "term": "Functional analysis review:  most common population studied",
+    "answer": "Kids with disabilities",
+    "chapter": 27,
+    "termNumber": 158,
+    "included": false
+  },
+  {
+    "id": "builtin-159",
+    "term": "Functional analysis review:  most common setting",
+    "answer": "Inpatient settings",
+    "chapter": 27,
+    "termNumber": 159,
+    "included": false
+  },
+  {
+    "id": "builtin-160",
+    "term": "Functional analysis:  AB model",
+    "answer": "FA in which an EO is manipulated (task vs no task; frequent attention vs low attention).  No consequences are presented when behavior occurs.",
+    "chapter": 27,
+    "termNumber": 160,
+    "included": false
+  },
+  {
+    "id": "builtin-161",
+    "term": "Functional analysis:  ABC model",
+    "answer": "FA in which EO and consequences are manipulated.  Examples:  Attention condition:  FR 1 attention for problem behavior when attention deprived.  Tangible condition:  FR 1 tangible for problem behavior when tangible deprived.",
+    "chapter": 27,
+    "termNumber": 161,
+    "included": false
+  },
+  {
+    "id": "builtin-162",
+    "term": "Functional analysis:  brief",
+    "answer": "An FA that involves 1 or 2 sessions",
+    "chapter": 27,
+    "termNumber": 162,
+    "included": false
+  },
+  {
+    "id": "builtin-163",
+    "term": "Functional Analysis: Latency Based",
+    "answer": "An FA that records latency of the first problem behavior in a condition.  The putative reinforcer is delivered, after which the session terminates.",
+    "chapter": 27,
+    "termNumber": 163,
+    "included": false
+  },
+  {
+    "id": "builtin-164",
+    "term": "Functional analysis:  limits",
+    "answer": "1.  Does analogue apply to real life\n2. Sometimes misses idiosyncratic variables\n3. Doesn't always investigate complex variables",
+    "chapter": 27,
+    "termNumber": 164,
+    "included": false
+  },
+  {
+    "id": "builtin-165",
+    "term": "Functional analysis:  Pair wise",
+    "answer": "When a particular test condition (e.g., FR 1 attention) has a corresponding control condition (e.g., continuous attention).  A pair wise is often used to test a particular hypothesis (e.g., is the behavior maintained by attention?).",
+    "chapter": 27,
+    "termNumber": 165,
+    "included": false
+  },
+  {
+    "id": "builtin-166",
+    "term": "Functional analysis:  role of precursors",
+    "answer": "Can be the DV if the problem behavior is dangerous.",
+    "chapter": 27,
+    "termNumber": 166,
+    "included": false
+  },
+  {
+    "id": "builtin-167",
+    "term": "Functional analysis:  strengths",
+    "answer": "High degree of confidence in determining functional relations",
+    "chapter": 27,
+    "termNumber": 167,
+    "included": false
+  },
+  {
+    "id": "builtin-168",
+    "term": "Functional analysis:  Trial-based methods",
+    "answer": "Functional analysis using brief trials in the natural environment.  Research has used control-test or control-test-control sequences.  DV is latency or % trials with problem behavior.",
+    "chapter": 27,
+    "termNumber": 168,
+    "included": false
+  },
+  {
+    "id": "builtin-169",
+    "term": "Functional analysis:  undifferentiated data",
+    "answer": "1. It may suggest that the behavior is under multiple control (there is more than 1 operant) or \n2. it may suggest that there is some idiosyncratic variable that is maintaining the behavior in all conditions or \n3. automatic reinforcers might maintain beh",
+    "chapter": 27,
+    "termNumber": 169,
+    "included": false
+  },
+  {
+    "id": "builtin-170",
+    "term": "Functional equivalence",
+    "answer": "When two or more behaviors have the same effect (they belong to the same operant).  This concept is often used in identifying a replacement behavior.",
+    "chapter": 27,
+    "termNumber": 170,
+    "included": false
+  },
+  {
+    "id": "builtin-171",
+    "term": "General case analysis",
+    "answer": "When training for generalization, including all relevant stimuli/responses that might be encountered.  For example, when training hand washing, all possible sink/soap combinations might be trained to prepare the person.",
+    "chapter": 30,
+    "termNumber": 171,
+    "included": false
+  },
+  {
+    "id": "builtin-172",
+    "term": "Generalization Gradient",
+    "answer": "A graph that shows the frequency of a behavior in various stimulus conditions, one of which is the \"training\" situation and then other similar but untrained \"test\" situations.",
+    "chapter": 30,
+    "termNumber": 172,
+    "included": false
+  },
+  {
+    "id": "builtin-173",
+    "term": "Generalized Imitation",
+    "answer": "Imitation skills that will occur even to untrained models.",
+    "chapter": 21,
+    "termNumber": 173,
+    "included": false
+  },
+  {
+    "id": "builtin-174",
+    "term": "Generative learning",
+    "answer": "Learning a general pattern of responding that allows the learner to perform in an untrained activity\nexample:  learn colors, then learn shapes:  as result student can identify color/shape combinations",
+    "chapter": 19,
+    "termNumber": 174,
+    "included": false
+  },
+  {
+    "id": "builtin-175",
+    "term": "Graduated Guidance",
+    "answer": "Give prompts were they are required, but immediately  fade when a person begins to perform the response",
+    "chapter": 17,
+    "termNumber": 175,
+    "included": false
+  },
+  {
+    "id": "builtin-176",
+    "term": "High probability request sequence (behavior momentum)",
+    "answer": "To increase the frequency of following a low probability request:  1. Give several high probability requests prior to the low probability request\n2. For compliance to each high probability request, provide a reinforcer.",
+    "chapter": 26,
+    "termNumber": 176,
+    "included": false
+  },
+  {
+    "id": "builtin-177",
+    "term": "Horizontal Axis Label",
+    "answer": "Some unit of time (days, sessions, weeks, etc)",
+    "chapter": 6,
+    "termNumber": 177,
+    "included": false
+  },
+  {
+    "id": "builtin-178",
+    "term": "How to assess whether staff training is needed:",
+    "answer": "Diagnose issues:  can't do or won't do?  Or both?",
+    "chapter": null,
+    "termNumber": 178,
+    "included": false
+  },
+  {
+    "id": "builtin-179",
+    "term": "How to compute conditional probability of A-B sequences",
+    "answer": "# A-->B / # A",
+    "chapter": 27,
+    "termNumber": 179,
+    "included": false
+  },
+  {
+    "id": "builtin-180",
+    "term": "How to compute conditional probability of B-C sequences",
+    "answer": "# B-->C / # B",
+    "chapter": 27,
+    "termNumber": 180,
+    "included": false
+  },
+  {
+    "id": "builtin-181",
+    "term": "How to sample high rate behavior",
+    "answer": "Continuous recording for short period of time",
+    "chapter": 4,
+    "termNumber": 181,
+    "included": false
+  },
+  {
+    "id": "builtin-182",
+    "term": "How to use verbal operants as a language assessment:  examples",
+    "answer": "1. Assess number of skills in each operant\n2. Use intraverbal to test vocabulary",
+    "chapter": 18,
+    "termNumber": 182,
+    "included": false
+  },
+  {
+    "id": "builtin-183",
+    "term": "Hypothesis testing (2 kinds)",
+    "answer": "1. Tx vs no Tx probes in real life setting\n2. Set up FA conditions to test hypothesis",
+    "chapter": 27,
+    "termNumber": 183,
+    "included": false
+  },
+  {
+    "id": "builtin-184",
+    "term": "Ignored Day",
+    "answer": "A day wherein the behavior did have a chance to occur but no data were collected, thus, the previous data point and the one following are connected",
+    "chapter": 6,
+    "termNumber": 184,
+    "included": false
+  },
+  {
+    "id": "builtin-185",
+    "term": "Incident method of pinpointing",
+    "answer": "Have caregiver report a specific incident of problem behavior, and derive the definition from the incident",
+    "chapter": 3,
+    "termNumber": 185,
+    "included": false
+  },
+  {
+    "id": "builtin-186",
+    "term": "Incidental learning",
+    "answer": "Learning that occurs in naturally occurring activities, not as a result of programmed, artificial learning trials.",
+    "chapter": null,
+    "termNumber": 186,
+    "included": false
+  },
+  {
+    "id": "builtin-187",
+    "term": "Independent Group Contingency",
+    "answer": "Reinforcer is available for any person whose behavior meets a criterion",
+    "chapter": 28,
+    "termNumber": 187,
+    "included": false
+  },
+  {
+    "id": "builtin-188",
+    "term": "Indirect assessment",
+    "answer": "No contact with the actual behavior:  interviews, records review, checklists",
+    "chapter": 27,
+    "termNumber": 188,
+    "included": false
+  },
+  {
+    "id": "builtin-189",
+    "term": "Inductive processes",
+    "answer": "Generating a hypothesis from data that has already been collected.",
+    "chapter": 2,
+    "termNumber": 189,
+    "included": false
+  },
+  {
+    "id": "builtin-190",
+    "term": "Information sharing and display",
+    "answer": "Information about behavior analysis services should be provided to those directly involved (clients, trainers, parents), and to those who have a legitimate interest (educational/governmental officials, administrators).   When sharing data with non-professionals, the display should be easily interpreted (avoid 6 cycle graphs - consider bar graphs).",
+    "chapter": 6,
+    "termNumber": 190,
+    "included": false
+  },
+  {
+    "id": "builtin-191",
+    "term": "Instructions",
+    "answer": "Verbal descriptions of behavior and antecedents/consequences.",
+    "chapter": 17,
+    "termNumber": 191,
+    "included": false
+  },
+  {
+    "id": "builtin-192",
+    "term": "Integrity of the Independent Variable",
+    "answer": "Refers to the extent to which the treatment is implemented as intended.",
+    "chapter": 10,
+    "termNumber": 192,
+    "included": false
+  },
+  {
+    "id": "builtin-193",
+    "term": "Intensity",
+    "answer": "Force of behavior, which could be measured in decibels (loudness) or lbs/sq in (pressure)",
+    "chapter": 4,
+    "termNumber": 193,
+    "included": true
+  },
+  {
+    "id": "builtin-194",
+    "term": "Interdependent Group Contingency",
+    "answer": "Reinforcer is available if all people in the group meet a minimum criterion -or- the group's overall performance meets a criterion",
+    "chapter": 28,
+    "termNumber": 194,
+    "included": false
+  },
+  {
+    "id": "builtin-195",
+    "term": "Intermediate outcomes",
+    "answer": "Goals that lead to ultimate outcomes Ex: learning to dress, ride the bus.  Often involves the use of a behavioral objective",
+    "chapter": 3,
+    "termNumber": 195,
+    "included": false
+  },
+  {
+    "id": "builtin-196",
+    "term": "Internal Validity",
+    "answer": "Whether or not changes in behavior can be attributed to the intervention.  AB designs lack strong internal validity, but ABA or ABAB designs have strong internal validity.",
+    "chapter": 7,
+    "termNumber": 196,
+    "included": false
+  },
+  {
+    "id": "builtin-197",
+    "term": "Interventions based on client preferences",
+    "answer": "1. Client is interested in pool.  So teach social skills during pool games\n2. Kid prefers to be outside.  So teach play skills outside",
+    "chapter": 3,
+    "termNumber": 197,
+    "included": false
+  },
+  {
+    "id": "builtin-198",
+    "term": "Interventions based on client's current repertoire",
+    "answer": "1. Select prompts based on skills (e.g., text prompts if they can read)\n2.  Initial time for wait program is 80% of the average",
+    "chapter": 3,
+    "termNumber": 198,
+    "included": false
+  },
+  {
+    "id": "builtin-199",
+    "term": "Interventions based on environmental and resource constraints",
+    "answer": "1. Recommend low cost tablet to family without great financial resources",
+    "chapter": 3,
+    "termNumber": 199,
+    "included": false
+  },
+  {
+    "id": "builtin-200",
+    "term": "Interventions based on supporting environment",
+    "answer": "1. Classroom teacher with 20 kids:  avoid complex schedules of reinforcement\n2. Family with 1 parent and 4 kids:  avoid lots of 1-1 teaching sessions",
+    "chapter": 3,
+    "termNumber": 200,
+    "included": false
+  },
+  {
+    "id": "builtin-201",
+    "term": "Interventions that follow from assessment",
+    "answer": "Ecological changes, antecedent manipulation, replacement skills, change consequences of appropriate and inappropriate behaviors, emergency procedures, motivational operations",
+    "chapter": 27,
+    "termNumber": 201,
+    "included": false
+  },
+  {
+    "id": "builtin-202",
+    "term": "Intraverbal",
+    "answer": "1. Form determined by prior verbal stimulus \n2. No point to point correspondence \n3. Formal similarity not necessary  \n4. Maintained by generalized conditioned reinforcer\n5. Audience is part of SD, but doesn't determine the form",
+    "chapter": 18,
+    "termNumber": 202,
+    "included": false
+  },
+  {
+    "id": "builtin-203",
+    "term": "Intructional procedures to promote generative learning (i.e., derived relations)",
+    "answer": "Setup teaching stimuli so that A =B, B =C in the hope that you will get A=C without teaching",
+    "chapter": 19,
+    "termNumber": 203,
+    "included": false
+  },
+  {
+    "id": "builtin-204",
+    "term": "Isolation Timeout",
+    "answer": "A timeout from reinforcement in which the person is placed in another location away from others",
+    "chapter": 15,
+    "termNumber": 204,
+    "included": false
+  },
+  {
+    "id": "builtin-205",
+    "term": "Kinds of Prompts",
+    "answer": "Physical guidance, gestural, written, verbal, imitation (modeling)",
+    "chapter": 17,
+    "termNumber": 205,
+    "included": false
+  },
+  {
+    "id": "builtin-206",
+    "term": "Lag 1",
+    "answer": "Examines the liklihood that an event occurs given another event that occurs just before.\nExample:  A --> B",
+    "chapter": 27,
+    "termNumber": 206,
+    "included": false
+  },
+  {
+    "id": "builtin-207",
+    "term": "Lag 2",
+    "answer": "Examines the liklihood that an event occurs given another event that occurs 2 events prior.\nExample: A2 --> A --> B",
+    "chapter": 27,
+    "termNumber": 207,
+    "included": false
+  },
+  {
+    "id": "builtin-208",
+    "term": "Lag sequential analysis",
+    "answer": "'Computations that examine the liklihood that an event will occur given another event.  When conditional probabilities are calculated.  It can be between an A and B, or between a B and C.  Formula for A and B:  Prob(A-->B)/Prob(A).  Formula for B and C:",
+    "chapter": 27,
+    "termNumber": 208,
+    "included": false
+  },
+  {
+    "id": "builtin-209",
+    "term": "Lawfulness of behavior",
+    "answer": "There is an orderly relation between behavior and other variables - there is no behavior phenemena that are \"undetermined\" or occurring freely.",
+    "chapter": 1,
+    "termNumber": 209,
+    "included": false
+  },
+  {
+    "id": "builtin-210",
+    "term": "Learn unit",
+    "answer": "A concept in instruction in which the teacher presents an SD, there is active student responding, and the teacher provides feedback to the student.  Ideally, learn units should occur frequently.",
+    "chapter": null,
+    "termNumber": 210,
+    "included": false
+  },
+  {
+    "id": "builtin-211",
+    "term": "Least-to-Most Prompting",
+    "answer": "Give SD and then wait for response to be performed.  If it is not, give the least intrusive prompt first, then second least intrusive, etc.",
+    "chapter": 17,
+    "termNumber": 211,
+    "included": false
+  },
+  {
+    "id": "builtin-212",
+    "term": "Level Systems (sometimes called molar system)",
+    "answer": "Level System wherein clients begin at bottom level and then work their way up to higher levels.  Each level has its own behavioral criteria for entry and its own collection of reinforcers.  Reinforcer value increases with the levels",
+    "chapter": null,
+    "termNumber": 212,
+    "included": false
+  },
+  {
+    "id": "builtin-213",
+    "term": "Limited Hold",
+    "answer": "When reinforcer is available for the next response, that response has a limited amount of time to occur or the reinforcer is lost (FI 1’ LH10”).  Used with interval schedules.",
+    "chapter": 13,
+    "termNumber": 213,
+    "included": false
+  },
+  {
+    "id": "builtin-214",
+    "term": "Listener training",
+    "answer": "1. Compliance\n2. Point to…\n3. Find the…",
+    "chapter": 18,
+    "termNumber": 214,
+    "included": false
+  },
+  {
+    "id": "builtin-215",
+    "term": "Low rate behavior:  why it occurs",
+    "answer": "The assumption is that the independent variables are low rate",
+    "chapter": 27,
+    "termNumber": 215,
+    "included": false
+  },
+  {
+    "id": "builtin-216",
+    "term": "Low rate/high intensity behavior:  Behavior assessment procedures",
+    "answer": "1. Descriptive assessment  \n2. Present SD/EO",
+    "chapter": 27,
+    "termNumber": 216,
+    "included": false
+  },
+  {
+    "id": "builtin-217",
+    "term": "Low rate/high intensity behavior:  measurement",
+    "answer": "1. Focus on precursors  \n2. Latency instead of rate",
+    "chapter": 27,
+    "termNumber": 217,
+    "included": false
+  },
+  {
+    "id": "builtin-218",
+    "term": "Maintenance",
+    "answer": "Extent to which a procedure can produce durable changes in behavior  -or-  a phase of acquisition that uses specially designed procedures to maintain an already-learned response",
+    "chapter": 30,
+    "termNumber": 218,
+    "included": false
+  },
+  {
+    "id": "builtin-219",
+    "term": "Maintenance procedures (6 ways)",
+    "answer": "1. train to fluency\n2. use naturally occurring stimuli\n3. fade out artificial stimuli\n4. use delayed consequences\n5. use self-control repertoires\n6. use intermittent schedules of reinforcement",
+    "chapter": 30,
+    "termNumber": 219,
+    "included": false
+  },
+  {
+    "id": "builtin-220",
+    "term": "Maladaptive behavior:  problem with term \"maladaptive\"",
+    "answer": "It is assumed that behavior is adaptive, as it has a function.",
+    "chapter": null,
+    "termNumber": 220,
+    "included": false
+  },
+  {
+    "id": "builtin-221",
+    "term": "Mand",
+    "answer": "1. Form determined by EO\n2. Maintained by specified reinforcer\n3. Audience is SD, but doesn't determine the form",
+    "chapter": 18,
+    "termNumber": 221,
+    "included": false
+  },
+  {
+    "id": "builtin-222",
+    "term": "Matching equation",
+    "answer": "Equation that expresses a fundamental functional relation:  the rate of response will be sensitive to the rate of reinforcement for that response as well as the rate of reinforcement for other responses\nEquation:\n           R1                 =          r1     \n          R1+R2                    r1 + r2",
+    "chapter": 13,
+    "termNumber": 222,
+    "included": false
+  },
+  {
+    "id": "builtin-223",
+    "term": "Matching equation:  2 ways to decrease R1",
+    "answer": "1. Decrease the rate of reinforcement for R1 and \n2. Increase the rate of reinforcement for R2.",
+    "chapter": 13,
+    "termNumber": 223,
+    "included": false
+  },
+  {
+    "id": "builtin-224",
+    "term": "Meaning of a word",
+    "answer": "Variables responsible for its emission.",
+    "chapter": 18,
+    "termNumber": 224,
+    "included": false
+  },
+  {
+    "id": "builtin-225",
+    "term": "Measurable dimensions of behavior",
+    "answer": "Rate, duration, latency, IRT",
+    "chapter": 4,
+    "termNumber": 225,
+    "included": false
+  },
+  {
+    "id": "builtin-226",
+    "term": "Measure for task completion",
+    "answer": "# tasks completed / # tasks given or # tasks completed vs # tasks not completed",
+    "chapter": 4,
+    "termNumber": 226,
+    "included": false
+  },
+  {
+    "id": "builtin-227",
+    "term": "Mentalistic Explanations of Behavior",
+    "answer": "Explanations that appeal to mental, unobservable processes.  Ex: The child was aggressive due to his frustration with school.",
+    "chapter": 1,
+    "termNumber": 227,
+    "included": false
+  },
+  {
+    "id": "builtin-228",
+    "term": "Methodological behaviorism",
+    "answer": "A kind of behaviorism that has the same assumptions of the causes of behavior as other kinds, but also holds that public events are appropriate targets.",
+    "chapter": 1,
+    "termNumber": 228,
+    "included": false
+  },
+  {
+    "id": "builtin-229",
+    "term": "Model",
+    "answer": "Some antecedent stimulus that is topographically identical to the behavior to be strengthened",
+    "chapter": 21,
+    "termNumber": 229,
+    "included": false
+  },
+  {
+    "id": "builtin-230",
+    "term": "Model Characteristics",
+    "answer": "Characteristics that might influence whether a model's behavior will be imitated:  model similarity, prestige of model, emphasis on modeled behaviors, how nurturing the model is, and instructions.",
+    "chapter": 21,
+    "termNumber": 230,
+    "included": false
+  },
+  {
+    "id": "builtin-231",
+    "term": "Modeling",
+    "answer": "Providing a model for another person to imitate.",
+    "chapter": 21,
+    "termNumber": 231,
+    "included": false
+  },
+  {
+    "id": "builtin-232",
+    "term": "Momentary-Time Sampling",
+    "answer": "A recording procedure in which a time period is divided into bins.  A \"+\" is recorded if the behavior occurs at the end of the bin.  A \"-\" is recorded if behavior does not occur at the end of the bin.  There is no systematic bias.",
+    "chapter": 4,
+    "termNumber": 232,
+    "included": false
+  },
+  {
+    "id": "builtin-233",
+    "term": "Monitoring:  2 target behaviors",
+    "answer": "1. Client behavior \n2. Implementors behavior",
+    "chapter": 15,
+    "termNumber": 233,
+    "included": false
+  },
+  {
+    "id": "builtin-234",
+    "term": "Most-to-Least Prompting",
+    "answer": "Present the prompt at maximum intensity, and  gradually use a less intense prompt over successive trials.",
+    "chapter": 17,
+    "termNumber": 234,
+    "included": false
+  },
+  {
+    "id": "builtin-235",
+    "term": "Motivating Operation (2 effects)",
+    "answer": "1. Changes the reinforcing effectiveness of some stimulus\n2. Changes the strength of behavior that has produced that stimulus in the past",
+    "chapter": 16,
+    "termNumber": 235,
+    "included": false
+  },
+  {
+    "id": "builtin-236",
+    "term": "Motivating operation (conditioned)",
+    "answer": "A motivating operation that has the two effects:  but the value altering effect occurs because of a learning history.",
+    "chapter": 16,
+    "termNumber": 236,
+    "included": false
+  },
+  {
+    "id": "builtin-237",
+    "term": "Motivating operation (unconditioned)",
+    "answer": "A motivating operation that has the two effects:  but the value altering effect occurs without a learning history.",
+    "chapter": 16,
+    "termNumber": 237,
+    "included": false
+  },
+  {
+    "id": "builtin-238",
+    "term": "Motivating operation vs discriminative stimulus",
+    "answer": "1. MO - changes the value of a reinforcer\n2. Discriminative stimuli (SD, S-delta, SDP) - signals degree of availability",
+    "chapter": 16,
+    "termNumber": 238,
+    "included": false
+  },
+  {
+    "id": "builtin-239",
+    "term": "Motivating operation vs reinforcement effects",
+    "answer": "1. MO - evoke or abate behavior\n2. Reinforcement - increases future frequency, and brings behavior under evocative control of an EO\n3. Thus, the effect of a MO is a result of a history of reinforcement",
+    "chapter": 16,
+    "termNumber": 239,
+    "included": false
+  },
+  {
+    "id": "builtin-240",
+    "term": "Motivating operation:  distal",
+    "answer": "An MO that is temporally removed from a behavior - for example, several hours prior to the behavior that is strengthened.",
+    "chapter": 16,
+    "termNumber": 240,
+    "included": false
+  },
+  {
+    "id": "builtin-241",
+    "term": "Motivating operation:  proximal",
+    "answer": "An MO that occurs close in time to a behavior",
+    "chapter": 16,
+    "termNumber": 241,
+    "included": false
+  },
+  {
+    "id": "builtin-242",
+    "term": "Multi-element (Final best Tx Phase)",
+    "answer": "Mult-element design that compares two treatments, and then implements the best treatment in the final phase.",
+    "chapter": 8,
+    "termNumber": 242,
+    "included": false
+  },
+  {
+    "id": "builtin-243",
+    "term": "Multiple Baseline (3)",
+    "answer": "Baseline data are collected on two or more subjects, situations, or behaviors.  Intervention is applied to the first, and then the first and second, etc.",
+    "chapter": 9,
+    "termNumber": 243,
+    "included": false
+  },
+  {
+    "id": "builtin-244",
+    "term": "Multiple baseline (non-concurrent)",
+    "answer": "Multple baselines that start at different points in time.  Typically, each tier starts after the tier above.",
+    "chapter": 9,
+    "termNumber": 244,
+    "included": false
+  },
+  {
+    "id": "builtin-245",
+    "term": "Multiple Probe",
+    "answer": "Multiple baseline design except that untreated behaviors are assessed periodically through probes until they receive the intervention.",
+    "chapter": 9,
+    "termNumber": 245,
+    "included": false
+  },
+  {
+    "id": "builtin-246",
+    "term": "Narrative recording",
+    "answer": "On-line description of behavior, antecedents and consequences written in prose.",
+    "chapter": 4,
+    "termNumber": 246,
+    "included": false
+  },
+  {
+    "id": "builtin-247",
+    "term": "Naturalistic behavioral assesment",
+    "answer": "Behavioral assessment that occurs in the natural environment.",
+    "chapter": 27,
+    "termNumber": 247,
+    "included": false
+  },
+  {
+    "id": "builtin-248",
+    "term": "Negative Practice",
+    "answer": "Contingent on some inappropriate behavior, requiring client to engage in that behavior repeatedly.  Has been used in smoking cessation.",
+    "chapter": 14,
+    "termNumber": 248,
+    "included": false
+  },
+  {
+    "id": "builtin-249",
+    "term": "No Chance Day",
+    "answer": "A day wherein the behavior could not occur, thus, the previous data point and the one following are not connected.",
+    "chapter": 6,
+    "termNumber": 249,
+    "included": false
+  },
+  {
+    "id": "builtin-250",
+    "term": "Non-technical language in explaining behavioral concepts",
+    "answer": "Behavior for attention:\n1. Technical:  The behavior is maintained by contingent attention\n2. Non-technical:  Every time the behavior occurs, he gets attention",
+    "chapter": null,
+    "termNumber": 250,
+    "included": false
+  },
+  {
+    "id": "builtin-251",
+    "term": "NS",
+    "answer": "Neutral Stimulus – stimulus that does not elicit a response prior to conditioning",
+    "chapter": 2,
+    "termNumber": 251,
+    "included": false
+  },
+  {
+    "id": "builtin-252",
+    "term": "Observation Times for High Rate Behavior",
+    "answer": "Can be brief",
+    "chapter": 4,
+    "termNumber": 252,
+    "included": false
+  },
+  {
+    "id": "builtin-253",
+    "term": "Observation Times for Low Rate Behavior",
+    "answer": "Longer duration to catch the behavior",
+    "chapter": 4,
+    "termNumber": 253,
+    "included": false
+  },
+  {
+    "id": "builtin-254",
+    "term": "Obtain Support from Others",
+    "answer": "To maintain a client's behavior, you should secure support from those in their natural environment and work in collaboration with others who are involved with the client.",
+    "chapter": null,
+    "termNumber": 254,
+    "included": false
+  },
+  {
+    "id": "builtin-255",
+    "term": "Ontogenic history",
+    "answer": "Refers to the lifetime of the organism",
+    "chapter": 2,
+    "termNumber": 255,
+    "included": false
+  },
+  {
+    "id": "builtin-256",
+    "term": "Outcomes management",
+    "answer": "When feedback is given to participants and the feedback depends on an outcome (often involves a permanent product such as $ made, skills taught, etc or some other product of behavior).",
+    "chapter": 1,
+    "termNumber": 256,
+    "included": false
+  },
+  {
+    "id": "builtin-257",
+    "term": "Overcorrection: positive practice",
+    "answer": "Contingent on some inappropriate behavior, requiring person to practice the appropriate behavior that should have occurred. Ex:  if a child wets his pants, he will then practice standing up and walking to the bathroom.",
+    "chapter": 14,
+    "termNumber": 257,
+    "included": false
+  },
+  {
+    "id": "builtin-258",
+    "term": "Overcorrection: restitution",
+    "answer": "Contingent on some inappropriate behavior, requiring the person to restore the environment to a condition superior to that before the behavior occurred.",
+    "chapter": 14,
+    "termNumber": 258,
+    "included": false
+  },
+  {
+    "id": "builtin-259",
+    "term": "Pairing procedures to establish conditioned reinforcers and punishers",
+    "answer": "1.  Deliver neutral stimulus just before already established reinforcer\n2. Don’t deliver the established reinforcer by itself",
+    "chapter": 11,
+    "termNumber": 259,
+    "included": false
+  },
+  {
+    "id": "builtin-260",
+    "term": "Parametric Analysis",
+    "answer": "Studying different values or levels of a treatment.  Can be accomplished by randomly presenting the different values in a ABCDEF design varied across participants -or- by presenting the values in an ascending/descending series in ABCDEDCBA design.  This d",
+    "chapter": 7,
+    "termNumber": 260,
+    "included": false
+  },
+  {
+    "id": "builtin-261",
+    "term": "Parsimony (Law of)",
+    "answer": "Assumption of Science.  The simplest explanation of behavior should be provided, all else being equal",
+    "chapter": 1,
+    "termNumber": 261,
+    "included": false
+  },
+  {
+    "id": "builtin-262",
+    "term": "Pattern Analysis",
+    "answer": "Looking for patterns of  behavior, noting any kind of correlation of behavior and some other factor.  Ex: time of day, staff, curriculum, etc.  Common type of pattern analysis is scatterplot.",
+    "chapter": 4,
+    "termNumber": 262,
+    "included": false
+  },
+  {
+    "id": "builtin-263",
+    "term": "Percent of occurrence",
+    "answer": "100* Number of occurrences/Number of opportunities",
+    "chapter": 4,
+    "termNumber": 263,
+    "included": false
+  },
+  {
+    "id": "builtin-264",
+    "term": "Percentage Correct",
+    "answer": "# of correct responses/ # of total responses, multiplied by 100",
+    "chapter": 4,
+    "termNumber": 264,
+    "included": false
+  },
+  {
+    "id": "builtin-265",
+    "term": "Performance Monitoring Systems",
+    "answer": "Systems designed to encourage and maintain appropriate staff behavior.  They involve objectively defined job descriptions, sufficient training in the job, on-line frequent feedback, and a system of incentives for excellent performance",
+    "chapter": null,
+    "termNumber": 265,
+    "included": false
+  },
+  {
+    "id": "builtin-266",
+    "term": "Personalized System of Instruction (PSI)",
+    "answer": "Material is broken down into units and each unit has its own study objectives.  Students work at their own pace, study the material and then take an exam.  Students must meet mastery criterion on an exam and may re-take exams until criterion is met.",
+    "chapter": null,
+    "termNumber": 266,
+    "included": false
+  },
+  {
+    "id": "builtin-267",
+    "term": "Phylogenic history",
+    "answer": "Refers to evolutionary history",
+    "chapter": 2,
+    "termNumber": 267,
+    "included": false
+  },
+  {
+    "id": "builtin-268",
+    "term": "Pinpoint behavior",
+    "answer": "Objective definition of the behavior in question",
+    "chapter": 3,
+    "termNumber": 268,
+    "included": false
+  },
+  {
+    "id": "builtin-269",
+    "term": "Planned Ignoring:  Also termed tactical ignoring",
+    "answer": "Behavior maintained by social reinforcers, and such reinforcers are withheld for a given period of time contingent on the behaviors.",
+    "chapter": 15,
+    "termNumber": 269,
+    "included": false
+  },
+  {
+    "id": "builtin-270",
+    "term": "Polydipsia",
+    "answer": "Excessive drinking - generated by schedules of food delivery.  Rats under a FT 1 min schedule will drink up to 4-5 times their body weight in water.  Also seen in FI schedules.",
+    "chapter": null,
+    "termNumber": 270,
+    "included": false
+  },
+  {
+    "id": "builtin-271",
+    "term": "Practical Issues with Alternating Treatments Design",
+    "answer": "Effects of one treatment can be seen in other conditions due to rapid alternation.  If treatment procedures are not  discriminable, differences may not be evident in data.",
+    "chapter": 8,
+    "termNumber": 271,
+    "included": false
+  },
+  {
+    "id": "builtin-272",
+    "term": "Practical Issues with Changing Criterion Design",
+    "answer": "Not all behaviors/treatments can be studied with this design.  In some cases, a reinforcement parameter may be able to be varied.",
+    "chapter": 9,
+    "termNumber": 272,
+    "included": false
+  },
+  {
+    "id": "builtin-273",
+    "term": "Practical Issues with Multiple Baseline Design",
+    "answer": "Requires untreated behaviors, participants or settings which could be dangerous.  Internal validity can be unclear when generalization occurs.",
+    "chapter": 9,
+    "termNumber": 273,
+    "included": false
+  },
+  {
+    "id": "builtin-274",
+    "term": "Practical Issues with Withdrawal & Reversal Designs",
+    "answer": "1. Requires counter-therapeutic change\n2. Not appropriate for irreversible changes\n3. SIB can be dangerous in this design",
+    "chapter": 8,
+    "termNumber": 274,
+    "included": false
+  },
+  {
+    "id": "builtin-275",
+    "term": "Pragmatism",
+    "answer": "The approach that holds the value of a theory or system is evaluated by its practical value.",
+    "chapter": 1,
+    "termNumber": 275,
+    "included": false
+  },
+  {
+    "id": "builtin-276",
+    "term": "Precision Teaching",
+    "answer": "Using behavioral teaching methods and the standard chart to track progress and make Tx decisions.",
+    "chapter": 6,
+    "termNumber": 276,
+    "included": false
+  },
+  {
+    "id": "builtin-277",
+    "term": "Precursors:  role in assessment",
+    "answer": "In the case of high intensity behavior, precursors maybe assessed for safety reasons",
+    "chapter": 27,
+    "termNumber": 277,
+    "included": false
+  },
+  {
+    "id": "builtin-278",
+    "term": "Precursors:  role in treatment",
+    "answer": "It can be useful to intervene, and treat, precursor behavior:  1) less restrictive procedures can be used 2) a given Tx maybe more effective, as precursors are earlier in the chain and therefore maybe weaker",
+    "chapter": 27,
+    "termNumber": 278,
+    "included": false
+  },
+  {
+    "id": "builtin-279",
+    "term": "Predictability relation to problem behavior",
+    "answer": "Used in behavior programs to decrease problem behavior.  This can involve written or picture schedules of upcoming events.",
+    "chapter": null,
+    "termNumber": 279,
+    "included": false
+  },
+  {
+    "id": "builtin-280",
+    "term": "Preliminary assessment",
+    "answer": "1. Practitioner gathers basic information about the case and about the target behavior. \n2. Determines if behavior services are appropriate \n3. Is he/she the appropriate provider",
+    "chapter": 27,
+    "termNumber": 280,
+    "included": false
+  },
+  {
+    "id": "builtin-281",
+    "term": "Primary Reinforcer",
+    "answer": "Reinforcer effective without previous conditioning (food, water)",
+    "chapter": 2,
+    "termNumber": 281,
+    "included": false
+  },
+  {
+    "id": "builtin-282",
+    "term": "Private Events",
+    "answer": "Behavior and/or stimuli that can only be observed by the person emitting the behavior, or experiencing the stimuli.  (Ex:  headaches)  These behaviors and stimuli still must be explained by appealing to a history of environmental contingencies or biologic",
+    "chapter": 1,
+    "termNumber": 282,
+    "included": false
+  },
+  {
+    "id": "builtin-283",
+    "term": "Probe Trials",
+    "answer": "A brief exposure to a different set of conditions.  For example, generalization probes, treatment probes, and withdrawal probes.",
+    "chapter": 19,
+    "termNumber": 283,
+    "included": false
+  },
+  {
+    "id": "builtin-284",
+    "term": "Problem with analogue FA – with respect to generality of results",
+    "answer": "Analogue setting sometimes unlike real-life.  Thus, poor generality in some cases.",
+    "chapter": 27,
+    "termNumber": 284,
+    "included": false
+  },
+  {
+    "id": "builtin-285",
+    "term": "Procedural Integrity",
+    "answer": "Collecting data on the extent to which the program is being implemented correctly.  Contingencies are used to maintain and shape behavior of implementers.",
+    "chapter": 10,
+    "termNumber": 285,
+    "included": false
+  },
+  {
+    "id": "builtin-286",
+    "term": "Procedural integrity DV",
+    "answer": "The typical DV is % of competencies correctly displayed.",
+    "chapter": 10,
+    "termNumber": 286,
+    "included": false
+  },
+  {
+    "id": "builtin-287",
+    "term": "Program Design Relating to Implementers",
+    "answer": "Design the Tx while keeping in mind the contingencies controlling the implementers behavior: will Tx be monitored, will staff receive feedback, etc.",
+    "chapter": null,
+    "termNumber": 287,
+    "included": false
+  },
+  {
+    "id": "builtin-288",
+    "term": "Programming response generalization",
+    "answer": "During training, program different topographical requirements, such using different faucets in handwashing that require different techniquess",
+    "chapter": 30,
+    "termNumber": 288,
+    "included": false
+  },
+  {
+    "id": "builtin-289",
+    "term": "Progressive Relaxation",
+    "answer": "Technique of relaxation wherein the person relaxes various muscle groups.  When completed, the person is able to totally relax all major muscle groups under the control of a cue.",
+    "chapter": null,
+    "termNumber": 289,
+    "included": false
+  },
+  {
+    "id": "builtin-290",
+    "term": "Prompts",
+    "answer": "An extra antecedent stimulus that is used to evoke a behavior such that it can then be reinforced",
+    "chapter": 17,
+    "termNumber": 290,
+    "included": false
+  },
+  {
+    "id": "builtin-291",
+    "term": "Protective equipment example of Tx of self stim",
+    "answer": "Use helmet to decrease face slapping that produces sensory stimuli.",
+    "chapter": 27,
+    "termNumber": 291,
+    "included": false
+  },
+  {
+    "id": "builtin-292",
+    "term": "Proximal MO example",
+    "answer": "Task presented to child --> problem behavior",
+    "chapter": 16,
+    "termNumber": 292,
+    "included": false
+  },
+  {
+    "id": "builtin-293",
+    "term": "Public Commitment",
+    "answer": "Person designing his/her own self-control program enlisting the contingency management support of friends or family.",
+    "chapter": 29,
+    "termNumber": 293,
+    "included": false
+  },
+  {
+    "id": "builtin-294",
+    "term": "Punishment (Conditioned)",
+    "answer": "1. Neutral stimulus paired with a punisher\n2. As a result, the neutral stimulus now becomes a punisher",
+    "chapter": 2,
+    "termNumber": 294,
+    "included": false
+  },
+  {
+    "id": "builtin-295",
+    "term": "Punishment (unconditioned)",
+    "answer": "The process by which a consequence of behavior produces a decrease in the frequency of behavior, and does so because of a learning history (e.g., pairing of the consequence with another consequence)",
+    "chapter": 2,
+    "termNumber": 295,
+    "included": false
+  },
+  {
+    "id": "builtin-296",
+    "term": "Punishment (unconditioned)",
+    "answer": "The process by which a consequence of behavior produces a decrease in the frequency of behavior, and does so without a learning history.",
+    "chapter": 2,
+    "termNumber": 296,
+    "included": false
+  },
+  {
+    "id": "builtin-297",
+    "term": "Punishment example of Tx of self stim",
+    "answer": "1. Overcorrection\n2. Timeout (but prevent self stim in timeout)",
+    "chapter": 14,
+    "termNumber": 297,
+    "included": false
+  },
+  {
+    "id": "builtin-298",
+    "term": "Punishment Guidelines for Efficacy (7 guidelines)",
+    "answer": "1. Immediate after the target behavior\n2. Consistent- punish every response (FR1)\n3. Provide alternative behavior that obtains same reinforcer\n4. Do not allow reinforcer to follow to  closely after punisher\n5. Use High Intensity Punisher\n6. Withhold all reinforcement\n7. Punisher should be linked to assessment data.",
+    "chapter": 14,
+    "termNumber": 298,
+    "included": false
+  },
+  {
+    "id": "builtin-299",
+    "term": "Punishment Side Effects (x5)",
+    "answer": "1. Escape from the punishing agent\n2. Aggression towards punishing agent\n3. Emotional behavior\n4. Modeling by observers\n5. Inappropriate generalization – person afraid to do anything.",
+    "chapter": 14,
+    "termNumber": 299,
+    "included": false
+  },
+  {
+    "id": "builtin-300",
+    "term": "Pyramid model of training",
+    "answer": "Train the trainers.  Behavior analyst trains personnnel who then become the trainers for others.",
+    "chapter": 15,
+    "termNumber": 300,
+    "included": false
+  },
+  {
+    "id": "builtin-301",
+    "term": "Radical behaviorism",
+    "answer": "A kind of behaviorism that has the same assumptions of the causes of behavior as other kinds, but also holds that both public and private events are appropriate targets.",
+    "chapter": 1,
+    "termNumber": 301,
+    "included": false
+  },
+  {
+    "id": "builtin-302",
+    "term": "Rank Order Preferences",
+    "answer": "Analyze choices to determine the most and least preferred items.  Formula is # times an item is selected divided by total number of pairs in which the item appeared then multiply the total by 100.",
+    "chapter": 11,
+    "termNumber": 302,
+    "included": false
+  },
+  {
+    "id": "builtin-303",
+    "term": "Rate/min issue",
+    "answer": "Rate/min is a measure of celeration.  If a rate measure is needed, use # beh/min.",
+    "chapter": 4,
+    "termNumber": 303,
+    "included": false
+  },
+  {
+    "id": "builtin-304",
+    "term": "Ratio Strain",
+    "answer": "A decrease in responding under a ratio schedule because ratio size is too large or was increased to rapidly",
+    "chapter": 13,
+    "termNumber": 304,
+    "included": false
+  },
+  {
+    "id": "builtin-305",
+    "term": "Reasons why you might need to intervene",
+    "answer": "1. Danger to self, others\n2. Safety hazard\n3. Welfare in current environment\n4. Behavior problem prevents access to less restrictive environment",
+    "chapter": 3,
+    "termNumber": 305,
+    "included": false
+  },
+  {
+    "id": "builtin-306",
+    "term": "Recommendations Regarding Interventions",
+    "answer": "Consider: client preferences, task analysis info, client's current repertoire, supports available in environment, environmental constraints, social validity, assessments and best practice",
+    "chapter": null,
+    "termNumber": 306,
+    "included": false
+  },
+  {
+    "id": "builtin-307",
+    "term": "Recording Procedures",
+    "answer": "Methods for recording behavior that produce data transposable into a measure",
+    "chapter": 4,
+    "termNumber": 307,
+    "included": false
+  },
+  {
+    "id": "builtin-308",
+    "term": "Reflexive CMO",
+    "answer": "Have their effects because their presence signals a \"worsening\" or \"improvement\" of conditions.  In the former, their offset is reinforcing.  In the latter, their offset is punishing.",
+    "chapter": 16,
+    "termNumber": 308,
+    "included": false
+  },
+  {
+    "id": "builtin-309",
+    "term": "Reflexive relations",
+    "answer": "These refer to the relation between a US-UR",
+    "chapter": 2,
+    "termNumber": 309,
+    "included": false
+  },
+  {
+    "id": "builtin-310",
+    "term": "Reflexivity",
+    "answer": "If A=A, then A=A",
+    "chapter": 19,
+    "termNumber": 310,
+    "included": false
+  },
+  {
+    "id": "builtin-311",
+    "term": "Rehearsal",
+    "answer": "Practicing a behavior to be learned",
+    "chapter": 21,
+    "termNumber": 311,
+    "included": false
+  },
+  {
+    "id": "builtin-312",
+    "term": "Reinforcer in using escape/avoidance hierarchy",
+    "answer": "Removal from hierarchy or transition to previous step. Can also use positive reinforcers from preference assessment.",
+    "chapter": 12,
+    "termNumber": 312,
+    "included": false
+  },
+  {
+    "id": "builtin-313",
+    "term": "Reinforcer Menu",
+    "answer": "A visual display of several reinforcers from which the person may choose",
+    "chapter": 11,
+    "termNumber": 313,
+    "included": false
+  },
+  {
+    "id": "builtin-314",
+    "term": "Reinforcer Sampling",
+    "answer": "Requiring a person to sample various reinforcers, such that he/she has sufficient experience with them to choose the preferred reinforcer",
+    "chapter": 11,
+    "termNumber": 314,
+    "included": false
+  },
+  {
+    "id": "builtin-315",
+    "term": "Reinforcer Survey",
+    "answer": "Ask people about their preferences.  Now more correctly referred as a preference assessment.",
+    "chapter": 11,
+    "termNumber": 315,
+    "included": false
+  },
+  {
+    "id": "builtin-316",
+    "term": "Relation between reinforcer effectiveness and delay, amount, quality, deprivation, and variety.",
+    "answer": "Reinforcer effectiveness increases with shorter delay, larger amounts, higher quality, greater deprivation, and greater variety.",
+    "chapter": 11,
+    "termNumber": 316,
+    "included": false
+  },
+  {
+    "id": "builtin-317",
+    "term": "Replacement Skills",
+    "answer": "New skills that are taught to replace target behaviors in order to obtain the same reinforcer",
+    "chapter": 27,
+    "termNumber": 317,
+    "included": false
+  },
+  {
+    "id": "builtin-318",
+    "term": "Required Relaxation",
+    "answer": "Contingent on some inappropriate behavior, requiring person to lie down and relax in quiet area for a period of time.",
+    "chapter": 15,
+    "termNumber": 318,
+    "included": false
+  },
+  {
+    "id": "builtin-319",
+    "term": "Respondent - operant interaction",
+    "answer": "A complete explanation of a given collection of behaviors often requires describing both operant and respondent processes.",
+    "chapter": 2,
+    "termNumber": 319,
+    "included": false
+  },
+  {
+    "id": "builtin-320",
+    "term": "Respondent - operant interaction (example)",
+    "answer": "The sound of a ringing phone may serve as an SD for picking it up.  It may also serve as a CS for heart rate increases.",
+    "chapter": 2,
+    "termNumber": 320,
+    "included": false
+  },
+  {
+    "id": "builtin-321",
+    "term": "Respondent (classical) Conditioning",
+    "answer": "Kind of learning in which one stimulus is paired with a second stimulus and, as a result, the first comes to elicit the same or similar response that the second elicits:  CS--> CR",
+    "chapter": 2,
+    "termNumber": 321,
+    "included": false
+  },
+  {
+    "id": "builtin-322",
+    "term": "Response",
+    "answer": "A single instance of a behavioral class.",
+    "chapter": 1,
+    "termNumber": 322,
+    "included": false
+  },
+  {
+    "id": "builtin-323",
+    "term": "Response class covariation",
+    "answer": "Operants contain various topographies.  If the strength of one member of the operant is changed by reinforcement or punishment, then the strength of the other members is changed as well.",
+    "chapter": 1,
+    "termNumber": 323,
+    "included": false
+  },
+  {
+    "id": "builtin-324",
+    "term": "Response class covariation:  role in treating low rate/high intensity behavior",
+    "answer": "May focus on treating lower intensity behavior in same class.",
+    "chapter": 1,
+    "termNumber": 324,
+    "included": false
+  },
+  {
+    "id": "builtin-325",
+    "term": "Response Cost",
+    "answer": "Contingent on some inappropriate behavior, the removal of a reinforcing object (radio, token, magazine).",
+    "chapter": 15,
+    "termNumber": 325,
+    "included": false
+  },
+  {
+    "id": "builtin-326",
+    "term": "Response Definition",
+    "answer": "Description of a response that is in objective and observable terms",
+    "chapter": 1,
+    "termNumber": 326,
+    "included": false
+  },
+  {
+    "id": "builtin-327",
+    "term": "Response Deprivation Procedures",
+    "answer": "Procedure that involves depriving an organism of the opportunity to emit a response and then using the opportunity to emit the response as a potential reinforcer for other behavior.",
+    "chapter": 11,
+    "termNumber": 327,
+    "included": false
+  },
+  {
+    "id": "builtin-328",
+    "term": "Response Differentiation",
+    "answer": "A use of differential reinforcement to change a characteristic of behavior.  For example, a father may only listen to his son when the son talks about sports.  As a result, the son frequently talks sports.",
+    "chapter": 22,
+    "termNumber": 328,
+    "included": false
+  },
+  {
+    "id": "builtin-329",
+    "term": "Response Generalization",
+    "answer": "Effects of some contingency spread to responses not yet associated with the contingency.",
+    "chapter": 30,
+    "termNumber": 329,
+    "included": false
+  },
+  {
+    "id": "builtin-330",
+    "term": "Resurgence",
+    "answer": "When Beh 1 re-appears after:\n1. Beh 1 is extinguished and Beh 2 is conditioned then…\n2. Beh 2 is extinguished or the schedule for Beh 2 is thinned",
+    "chapter": 24,
+    "termNumber": 330,
+    "included": false
+  },
+  {
+    "id": "builtin-331",
+    "term": "Reversal (DRI)",
+    "answer": "Baseline on 2 behaviors  --> Stimulus contingent on R1 --> Stimulus contingent on R2",
+    "chapter": 8,
+    "termNumber": 331,
+    "included": false
+  },
+  {
+    "id": "builtin-332",
+    "term": "Reversal (DRO)",
+    "answer": "Baseline  --> Stimulus contingent on behavior  --> Stimulus delivered under DRO (often yoked)",
+    "chapter": 8,
+    "termNumber": 332,
+    "included": false
+  },
+  {
+    "id": "builtin-333",
+    "term": "Reversal (NCR/FT)",
+    "answer": "Baseline --> Stimulus contingent on response --> Stimulus delivered under FT (often yoked)",
+    "chapter": 8,
+    "termNumber": 333,
+    "included": false
+  },
+  {
+    "id": "builtin-334",
+    "term": "Role of feedback from trainees",
+    "answer": "To help behavior analyst develop more effective training.",
+    "chapter": 15,
+    "termNumber": 334,
+    "included": false
+  },
+  {
+    "id": "builtin-335",
+    "term": "Role of maintenance in monitoring",
+    "answer": "Identify contingencies that will maintain skills of implementers.",
+    "chapter": 15,
+    "termNumber": 335,
+    "included": false
+  },
+  {
+    "id": "builtin-336",
+    "term": "Rule-Governed Behavior",
+    "answer": "Behavior resulting from rules rather than direct exposure to contingencies.  For example a person may put together a bike using the instruction manual.",
+    "chapter": 20,
+    "termNumber": 336,
+    "included": false
+  },
+  {
+    "id": "builtin-337",
+    "term": "Rules",
+    "answer": "Contingency-specifying stimuli (CSS) that describe relations between stimuli or between stimuli and behavior",
+    "chapter": 20,
+    "termNumber": 337,
+    "included": false
+  },
+  {
+    "id": "builtin-338",
+    "term": "Rules for Designing a Token System",
+    "answer": "1. base it on functional assessments\n2. ID tokens that are easily used\n3. ID target behaviors and rules for obtaining tokens\n4. ID schedule of token exchange\n5. ID how tokens will be conditioned as reinforcers\n6. field test the system and fine tune as nee",
+    "chapter": 28,
+    "termNumber": 338,
+    "included": false
+  },
+  {
+    "id": "builtin-339",
+    "term": "S-delta",
+    "answer": "A stimulus that:\n1. suppresses a behavior  \n2. because that behavior has been extinguished in the presence of the stimulus",
+    "chapter": 17,
+    "termNumber": 339,
+    "included": false
+  },
+  {
+    "id": "builtin-340",
+    "term": "Satiation",
+    "answer": "Decrease in responding due to the reduced effectiveness of the reinforcer, because the person has received too much of it.",
+    "chapter": 18,
+    "termNumber": 340,
+    "included": false
+  },
+  {
+    "id": "builtin-341",
+    "term": "SD",
+    "answer": "Stimulus that \n1. evokes a behavior  \n2. because that behavior has been reinforced in the presence of the stimulus.",
+    "chapter": 17,
+    "termNumber": 341,
+    "included": false
+  },
+  {
+    "id": "builtin-342",
+    "term": "SDP",
+    "answer": "Stimulus that \n\n1. decreases or suppresses a behavior  \n2.  because that behavior has been punished in the presence of the stimulus.",
+    "chapter": 17,
+    "termNumber": 342,
+    "included": false
+  },
+  {
+    "id": "builtin-343",
+    "term": "Secure support of others to maintain client behavior change:  behavioral trapping",
+    "answer": "Develop contingencies in the natural environment to \"trap\" or reinforcer newly acquired skills",
+    "chapter": 30,
+    "termNumber": 343,
+    "included": false
+  },
+  {
+    "id": "builtin-344",
+    "term": "Selectionism",
+    "answer": "An approach that, as applied to behavior analysis, suggests a complete account of behavior must consider 3 levels of selection:  natural, operant conditioning, and cultural practice.",
+    "chapter": 1,
+    "termNumber": 344,
+    "included": false
+  },
+  {
+    "id": "builtin-345",
+    "term": "Selectionism (cultural practice)",
+    "answer": "Cultural practice selection is the emergence of a cultural practice as a result of the culture surviving over time.  \n1. Selection mechanism:  cultural survival\n2. What is selected:  cultural practice",
+    "chapter": 1,
+    "termNumber": 345,
+    "included": false
+  },
+  {
+    "id": "builtin-346",
+    "term": "Selectionism (natural)",
+    "answer": "Natural selection is the emergence of genetic characterisitic as a result of the organism surviving until breeding age, and passing that characteristic to the offspring.  \n1. Selection mechanism:  survival\n2. What is selected:  genes",
+    "chapter": 1,
+    "termNumber": 346,
+    "included": false
+  },
+  {
+    "id": "builtin-347",
+    "term": "Selectionism (operant conditioning)",
+    "answer": "Operant conditioning is the emergence of a behavior as a result of reinforcement.  \n1. Selection mechanism:  reinforcement\n2. What is selected:  behavior",
+    "chapter": 1,
+    "termNumber": 347,
+    "included": false
+  },
+  {
+    "id": "builtin-348",
+    "term": "Self Control",
+    "answer": "Involves treatment procedures that are implemented by the client. And, whether or not the procedures are implemented are determined by the client, as in self reinforcement or self punishment.  Typically requires some external source of contingency managem",
+    "chapter": 29,
+    "termNumber": 348,
+    "included": false
+  },
+  {
+    "id": "builtin-349",
+    "term": "Self Management",
+    "answer": "Another term for self control.  The person actively participates in the recording, goal setting, or reinforcement procedures.",
+    "chapter": 29,
+    "termNumber": 349,
+    "included": false
+  },
+  {
+    "id": "builtin-350",
+    "term": "Self stim:  how to identify in behavioral assessment",
+    "answer": "1. Undifferentiated data\n2. Persistence in absence of social contingencies\n3. Manipulate public consequences\n4. Substitute similar activities to decrease it",
+    "chapter": 27,
+    "termNumber": 350,
+    "included": false
+  },
+  {
+    "id": "builtin-351",
+    "term": "Self-Punishment",
+    "answer": "Client decides if their behavior meets criteria for punishment and delivers the punisher (or arranges for its delivery) if it does.",
+    "chapter": 29,
+    "termNumber": 351,
+    "included": false
+  },
+  {
+    "id": "builtin-352",
+    "term": "Self-Recording",
+    "answer": "Client decides if and when their own behavior meets a criterion, and then recording the behavior if it does.",
+    "chapter": 29,
+    "termNumber": 352,
+    "included": false
+  },
+  {
+    "id": "builtin-353",
+    "term": "Self-reinforcement",
+    "answer": "Clients decides if behavior meets criteria for reinforcement and delivers the reinforcer (or arranges for its delivery) if it does.",
+    "chapter": 29,
+    "termNumber": 353,
+    "included": false
+  },
+  {
+    "id": "builtin-354",
+    "term": "Sensory extinction example of self stim",
+    "answer": "Disconnect light bulb to decrease flipping of light switch",
+    "chapter": 24,
+    "termNumber": 354,
+    "included": false
+  },
+  {
+    "id": "builtin-355",
+    "term": "Setting events:  issue with term",
+    "answer": "Setting events is not technical term in the field.  They typically refer to motivational operations",
+    "chapter": null,
+    "termNumber": 355,
+    "included": false
+  },
+  {
+    "id": "builtin-356",
+    "term": "Shadowing",
+    "answer": "When the trainer moves his/ her hands along with the client's hands as he performs the skill.",
+    "chapter": 17,
+    "termNumber": 356,
+    "included": false
+  },
+  {
+    "id": "builtin-357",
+    "term": "Shaping",
+    "answer": "Gradually changing the form or topography of a behavior by reinforcing successive approximations to the correct response",
+    "chapter": 22,
+    "termNumber": 357,
+    "included": false
+  },
+  {
+    "id": "builtin-358",
+    "term": "Side Effects of Negative Reinforcement",
+    "answer": "Similar to punishment side effects:  escape from aversive stimuli, aggression, emotional behavior, etc.",
+    "chapter": 12,
+    "termNumber": 358,
+    "included": false
+  },
+  {
+    "id": "builtin-359",
+    "term": "Side Effects of Positive Reinforcement (positive side effects)",
+    "answer": "Approach behavior (instead of escape), positive emotional behavior (the person \"likes\" the staff/parent)",
+    "chapter": 11,
+    "termNumber": 359,
+    "included": false
+  },
+  {
+    "id": "builtin-360",
+    "term": "Side Effects of Positive Reinforcement (unfortunate side effects)",
+    "answer": "Schedule-induced aggression, frequent requests for reinforcer (nagging), \"shadowing\" the source of reinforcement, attempts to escape schedule when the requirements are high (e.g., high FR schedules).",
+    "chapter": 11,
+    "termNumber": 360,
+    "included": false
+  },
+  {
+    "id": "builtin-361",
+    "term": "Simultaneous prompts",
+    "answer": "Prompts are given at the same time or just after the SD",
+    "chapter": 17,
+    "termNumber": 361,
+    "included": false
+  },
+  {
+    "id": "builtin-362",
+    "term": "Skinner’s Verbal Behavior",
+    "answer": "A system of language that classifies verbal behavior according to its function.",
+    "chapter": 18,
+    "termNumber": 362,
+    "included": false
+  },
+  {
+    "id": "builtin-363",
+    "term": "Social Learning Theory",
+    "answer": "Theory of learning that posits learning occurs as a result of observations that subsequently affect the person through cognitive mediational processes.",
+    "chapter": 21,
+    "termNumber": 363,
+    "included": false
+  },
+  {
+    "id": "builtin-364",
+    "term": "Social Significance",
+    "answer": "Characteristic of Applied Behavior Analysis whereas the behavior is socially significant to the person as well as the changes that occur.",
+    "chapter": 1,
+    "termNumber": 364,
+    "included": false
+  },
+  {
+    "id": "builtin-365",
+    "term": "Social Validity",
+    "answer": "Whether goals, procedures, and outcomes are acceptable.  This can be determined by asking community members, experts, competent individuals, family or the client.",
+    "chapter": 3,
+    "termNumber": 365,
+    "included": false
+  },
+  {
+    "id": "builtin-366",
+    "term": "Solutions for referrals of cases with which you have inadequate training/experience",
+    "answer": "1. Get consulation, supervision, or training\n2. Refer out",
+    "chapter": null,
+    "termNumber": 366,
+    "included": false
+  },
+  {
+    "id": "builtin-367",
+    "term": "Spatial Fading",
+    "answer": "Gradually changing the spatial locus of a prompt during fading.  E.g. going from hand, to wrist, to forearm, etc.",
+    "chapter": 17,
+    "termNumber": 367,
+    "included": false
+  },
+  {
+    "id": "builtin-368",
+    "term": "Split Middle Method",
+    "answer": "Method for drawing a trend line.  The line is drawn so that half of the data points fall above the line and half of the data points fall below the line.",
+    "chapter": 6,
+    "termNumber": 368,
+    "included": false
+  },
+  {
+    "id": "builtin-369",
+    "term": "Staff training:  best practice",
+    "answer": "Explanation, demonstration, and feedback on their implementation.  It is particularly important to have them practice the skills and receive feedback.",
+    "chapter": 30,
+    "termNumber": 369,
+    "included": false
+  },
+  {
+    "id": "builtin-370",
+    "term": "Staff/Parent Training design",
+    "answer": "ID contingencies controlling her/his behavior, and then use this to design the contingencies for ensuring implementation",
+    "chapter": 30,
+    "termNumber": 370,
+    "included": false
+  },
+  {
+    "id": "builtin-371",
+    "term": "Stimulus Control",
+    "answer": "The extent to which a behavior occurs when the antecedent stimulus is presented.  EX:  Mom has stimulus control over a child's tantrums to the extent that the child tantrums in the presence of mom, and does not tantrum in her absence.",
+    "chapter": 17,
+    "termNumber": 371,
+    "included": false
+  },
+  {
+    "id": "builtin-372",
+    "term": "Stimulus Equivalence",
+    "answer": "When a class of stimuli evoke the same responses or more generally have the same effects on behavior.  Stimuli that evoke the response \"dog\" include 1. word dog 2. picture of dog 3. sight of dog 4. sound of dog barking",
+    "chapter": 19,
+    "termNumber": 372,
+    "included": false
+  },
+  {
+    "id": "builtin-373",
+    "term": "Stimulus Generalization",
+    "answer": "Effects of a contingency spread to stimuli not yet associated with the contingency.",
+    "chapter": 30,
+    "termNumber": 373,
+    "included": false
+  },
+  {
+    "id": "builtin-374",
+    "term": "Stimulus Over-Selectivity",
+    "answer": "The tendency of lower functioning individuals to attend to one and only one element of a complex SD.  With a red A and blue B, the individual may only attend to the colors and fail to attend to the letters.",
+    "chapter": 17,
+    "termNumber": 374,
+    "included": false
+  },
+  {
+    "id": "builtin-375",
+    "term": "Stimulus Shaping",
+    "answer": "Involves transfer of stimulus control from an already effective stimulus to a new stimulus.  E.g. using two apples to teach number 2 and then fading them into the number 2.",
+    "chapter": 17,
+    "termNumber": 375,
+    "included": false
+  },
+  {
+    "id": "builtin-376",
+    "term": "Student assisted interview in assessment",
+    "answer": "Interview questions that student answers to assist in descriptive assessment.",
+    "chapter": 27,
+    "termNumber": 376,
+    "included": false
+  },
+  {
+    "id": "builtin-377",
+    "term": "Superstitious Behavior",
+    "answer": "Behavior that occurs as a result of \"accidental\" or adventitious reinforcement.  In this kind of reinforcement, the reinforcer is not produced by the response, but nontheless occurs after it.",
+    "chapter": 11,
+    "termNumber": 377,
+    "included": false
+  },
+  {
+    "id": "builtin-378",
+    "term": "Support for behavior analysis services from those directly involved",
+    "answer": "A behavior analyst should enlist support for her/his technology from those who are directly affected by the services (e.g., staff, teachers, teacher assistants, counselors).",
+    "chapter": null,
+    "termNumber": 378,
+    "included": false
+  },
+  {
+    "id": "builtin-379",
+    "term": "Support for behavior analysis services from those indirectly  involved",
+    "answer": "A behavior analyst should enlist support for her/his technology from those who are indirectly affected by the services - those who may have decision power over the behavior analyst (administrators, educational/government officials, advocacy committee, DCF",
+    "chapter": null,
+    "termNumber": 379,
+    "included": false
+  },
+  {
+    "id": "builtin-380",
+    "term": "Surrogate CMO",
+    "answer": "A surrogate CMO has its effect because of a history of pairing with an MO, and these effects mimic those of the MO.",
+    "chapter": 16,
+    "termNumber": 380,
+    "included": false
+  },
+  {
+    "id": "builtin-381",
+    "term": "Symmetry",
+    "answer": "If A=B, then B=A",
+    "chapter": 19,
+    "termNumber": 381,
+    "included": false
+  },
+  {
+    "id": "builtin-382",
+    "term": "Systematic Manipulation",
+    "answer": "Assumption of science.  To see if an event affects behavior, the event is systematically manipulated and the effects on behavior are noted.",
+    "chapter": 1,
+    "termNumber": 382,
+    "included": false
+  },
+  {
+    "id": "builtin-383",
+    "term": "Systematic Replication",
+    "answer": "Purposefully changing elements of the experiment and repeating the new experiment.  Displays external validity or generality.",
+    "chapter": 10,
+    "termNumber": 383,
+    "included": false
+  },
+  {
+    "id": "builtin-384",
+    "term": "Tact (controlling variables)",
+    "answer": "The form of a tact is determined by a prior non-verbal stimulus.  Audience has some discriminative control, but does not determine the form.  The reinforcer is a GCR.",
+    "chapter": 18,
+    "termNumber": 384,
+    "included": false
+  },
+  {
+    "id": "builtin-385",
+    "term": "Tact extensions",
+    "answer": "Generic, metaphor, metonomy, solistic - degrees of generalization of the tact",
+    "chapter": 18,
+    "termNumber": 385,
+    "included": false
+  },
+  {
+    "id": "builtin-386",
+    "term": "Target Behavior",
+    "answer": "Behavior to be changed.",
+    "chapter": 3,
+    "termNumber": 386,
+    "included": true
+  },
+  {
+    "id": "builtin-387",
+    "term": "Target Setting",
+    "answer": "Setting to which a client will be placed after behavioral programming has finished.  Setting to which generalization efforts are directed",
+    "chapter": 3,
+    "termNumber": 387,
+    "included": false
+  },
+  {
+    "id": "builtin-388",
+    "term": "Task analysis",
+    "answer": "Task in broken into smaller elements and elements are stated in their correct order",
+    "chapter": 23,
+    "termNumber": 388,
+    "included": false
+  },
+  {
+    "id": "builtin-389",
+    "term": "Task interspersal",
+    "answer": "In instruction, difficult tasks should be presented and interspersed with easier tasks (such as maintenance tasks).",
+    "chapter": 26,
+    "termNumber": 389,
+    "included": false
+  },
+  {
+    "id": "builtin-390",
+    "term": "Task Variation",
+    "answer": "The extent to which tasks are varied in a block of time.  There is some research that suggests rapidly varying the tasks may engender improved learning.",
+    "chapter": 26,
+    "termNumber": 390,
+    "included": false
+  },
+  {
+    "id": "builtin-391",
+    "term": "Teaching VB using transfer of stimulus control",
+    "answer": "1. Teach echoics or textuals\n2. Use echoics or textuals as prompts when teaching mands, tacks, intraverbals\n3. Fade use of echoics or textuals as prompts",
+    "chapter": 18,
+    "termNumber": 391,
+    "included": false
+  },
+  {
+    "id": "builtin-392",
+    "term": "Techniques behavior analysts can use to influence others in the system",
+    "answer": "Run a behavior program!  Identify critical participants and then…\n\n1. Pairing\n2. Reinforce their cooperation\n3. Education/prompts\n4. Show outcomes of efficacy in case reviews, publications, etc.",
+    "chapter": null,
+    "termNumber": 392,
+    "included": false
+  },
+  {
+    "id": "builtin-393",
+    "term": "Termination of services:  Plan?",
+    "answer": "Behavior analysts should arrange for an orderly discharge/titration plan",
+    "chapter": null,
+    "termNumber": 393,
+    "included": false
+  },
+  {
+    "id": "builtin-394",
+    "term": "Testing Hypothesis in Functional Analysis",
+    "answer": "Conditions are arranged to test the hypothesis.  Ex:   to assess behavior thought to occur for attention, compare condition in which attention is given after behavior with that where attention is withheld after behavior.",
+    "chapter": 27,
+    "termNumber": 394,
+    "included": false
+  },
+  {
+    "id": "builtin-395",
+    "term": "Textual (controlling variables)",
+    "answer": "The form of a textual is determined by a prior verbal stimulus that is in written form.  Audience has some discriminative control, but does not determine the form.  The reinforcer is a GCR.  There is point-to-point correspondence but formal dissimilarity.",
+    "chapter": 18,
+    "termNumber": 395,
+    "included": false
+  },
+  {
+    "id": "builtin-396",
+    "term": "Threats to Internal Validity",
+    "answer": "Events that call into question whether the changes in behavior resulted from the treatment.  Include maturation of the subject(s), inaccurate or biased recording, poor implementation of the treatment, unplanned environmental changes, etc.",
+    "chapter": 7,
+    "termNumber": 396,
+    "included": false
+  },
+  {
+    "id": "builtin-397",
+    "term": "Timeout",
+    "answer": "Time out from reinforcement – signaling the removal of opportunity to earn reinforcement for a period of time, contingent on inappropriate behavior.",
+    "chapter": 15,
+    "termNumber": 397,
+    "included": false
+  },
+  {
+    "id": "builtin-398",
+    "term": "Titration plan",
+    "answer": "Gradually decrease the frequency/level of services as a way to fade services",
+    "chapter": null,
+    "termNumber": 398,
+    "included": false
+  },
+  {
+    "id": "builtin-399",
+    "term": "Tokens",
+    "answer": "Generalized conditioned reinforcers that when earned can be exchanged for other reinforcers, or backup reinforcers.  Benefits:  quickly & easily delivered, exchanged for a variety of backup reinforcers.",
+    "chapter": 28,
+    "termNumber": 399,
+    "included": false
+  },
+  {
+    "id": "builtin-400",
+    "term": "Total Task Training",
+    "answer": "When an entire task is trained at once, instead of implementing a chaining procedure. Usually includes graduated guidance",
+    "chapter": 23,
+    "termNumber": 400,
+    "included": false
+  },
+  {
+    "id": "builtin-401",
+    "term": "Train Loosely for Generalization",
+    "answer": "During training, vary the environment such that there is not narrow stimulus control over the skill.  This procedure tends to flatten the generalization gradient.",
+    "chapter": 30,
+    "termNumber": 401,
+    "included": false
+  },
+  {
+    "id": "builtin-402",
+    "term": "Transfer of Stimulus Control",
+    "answer": "When one stimulus can evoke a response, and then that capacity is transferred to a second stimulus",
+    "chapter": 17,
+    "termNumber": 402,
+    "included": false
+  },
+  {
+    "id": "builtin-403",
+    "term": "Transitive CMO",
+    "answer": "Change the reinforcing value of some other stimulus, and change the strength of behavior that has produced that stimulus in the past.",
+    "chapter": 18,
+    "termNumber": 403,
+    "included": false
+  },
+  {
+    "id": "builtin-404",
+    "term": "Transitivity",
+    "answer": "If A=B and B=C, then A=C",
+    "chapter": 19,
+    "termNumber": 404,
+    "included": false
+  },
+  {
+    "id": "builtin-405",
+    "term": "Trials to Criterion",
+    "answer": "Number of trials required for a behavior to meet some criterion (Ex: number of trials it takes to complete a task without error)",
+    "chapter": 4,
+    "termNumber": 405,
+    "included": false
+  },
+  {
+    "id": "builtin-406",
+    "term": "Trigger analysis",
+    "answer": "Examine the evocative effects of a particular antecedent stimulus",
+    "chapter": 27,
+    "termNumber": 406,
+    "included": false
+  },
+  {
+    "id": "builtin-407",
+    "term": "Ultimate outcomes",
+    "answer": "Goals  that relate to health, safety, choice, access to positive reinforcers, avoiding aversive events and quality of life.",
+    "chapter": 3,
+    "termNumber": 407,
+    "included": false
+  },
+  {
+    "id": "builtin-408",
+    "term": "Verbal behavior",
+    "answer": "Behavior that is maintained by reinforcement mediated by another person.  In the refined definition, the other person (audience) is trained by the verbal community to provide the reinforcer for that behavior.",
+    "chapter": 18,
+    "termNumber": 408,
+    "included": false
+  },
+  {
+    "id": "builtin-409",
+    "term": "Verbal operants:  Basis for language assessment",
+    "answer": "It is reasonable to conduct a language assessment by assessing competence in each the the verbal operants.  Data can be collected on the frequency of particular forms, and the number of said forms.",
+    "chapter": 18,
+    "termNumber": 409,
+    "included": false
+  },
+  {
+    "id": "builtin-410",
+    "term": "Vertical Axis Label",
+    "answer": "The measure of behavior",
+    "chapter": 6,
+    "termNumber": 410,
+    "included": false
+  },
+  {
+    "id": "builtin-411",
+    "term": "Ways to Program Generalization (8 ways)",
+    "answer": "1. Instructions – train a response and give instruction to encourage generalization\n2. Train in many stimulus conditions.(multiple exemplars)\n3. Design supportive environment-untrained situations.\n4. Train loosely\n5. Program common stimuli\n6. Delayed/intermittent reinforcement\n7. Self Management\n8. Use a variety of prosthetic devices for response generalization",
+    "chapter": 30,
+    "termNumber": 411,
+    "included": false
+  },
+  {
+    "id": "builtin-412",
+    "term": "Weakening Behavior:  Replacement skills",
+    "answer": "Select a replacement skill that is easy to emit and has the same function as the inappropriate behavior",
+    "chapter": 27,
+    "termNumber": 412,
+    "included": false
+  },
+  {
+    "id": "builtin-413",
+    "term": "What monitoring tool to use?",
+    "answer": "Same as training checklist",
+    "chapter": 15,
+    "termNumber": 413,
+    "included": false
+  },
+  {
+    "id": "builtin-414",
+    "term": "When collaborating with other non-behavioral professionals…",
+    "answer": "1. Do:  offer suggestions, make recommendation respectively\n2. Do not:  try and re-train them, tell them they are wrong, report them to their supervisors\n3. Overall:  approach the situation behaviorally",
+    "chapter": null,
+    "termNumber": 414,
+    "included": false
+  },
+  {
+    "id": "builtin-415",
+    "term": "Withdrawal with Probe Design",
+    "answer": "A standard ABAB design except the return to the A condition is very brief.",
+    "chapter": 8,
+    "termNumber": 415,
+    "included": false
+  },
+  {
+    "id": "builtin-416",
+    "term": "Within-stimulus Prompts",
+    "answer": "Those prompts that are contained within the SD, such as isolating and exaggerating the critical difference between an \"E\" and \"F\"",
+    "chapter": 17,
+    "termNumber": 416,
+    "included": false
+  },
+  {
+    "id": "builtin-417",
+    "term": "Yoking:  between subject",
+    "answer": "Between subject yoking:  when some parameter in a condition is used in another condition for a different subject (e.g., one subject, called the master, is responding under a FR 5 condition.  When this subject earns a reinforcer, another subject receives a reinforcer.",
+    "chapter": 8,
+    "termNumber": 417,
+    "included": false
+  },
+  {
+    "id": "builtin-418",
+    "term": "ABA Characteristics (GETACAB)",
+    "answer": "1. Generality\n2. Applied\n3. Technological\n4. Analytic\n5. Conceptually systematic\n6. Applied\n7. Behavioral",
+    "chapter": 1,
+    "termNumber": 418,
+    "included": false
+  },
+  {
+    "id": "builtin-419",
+    "term": "Analytic",
+    "answer": "Characteristic of ABA. Scientifically based experimental designs are used.  They maybe used to identify the function of problem behavior, whether or not a Tx works, or what element of a Tx is effective.",
+    "chapter": 1,
+    "termNumber": 419,
+    "included": false
+  },
+  {
+    "id": "builtin-420",
+    "term": "Applied",
+    "answer": "Characteristic of ABA.  Focuses on behavior with social significance.",
+    "chapter": 1,
+    "termNumber": 420,
+    "included": false
+  },
+  {
+    "id": "builtin-421",
+    "term": "Applied Behavior Analysis vs Experimental Analysis of Behavior",
+    "answer": "Both use systematic manipulations and data analysis of individual organisms.\nABA:  Behaviors of social significance to the person are investigated\n\nEAB:  Behaviors of no social significance of the person are investigated",
+    "chapter": 1,
+    "termNumber": 421,
+    "included": false
+  },
+  {
+    "id": "builtin-422",
+    "term": "Assumptions/Characteristics of Science",
+    "answer": "1. Determinism\n2. Law of Parsimony\n3. Scientific Manipulation\n4. Empiricism\n5. Philosophic Doubt\n6. Replication",
+    "chapter": 2,
+    "termNumber": 422,
+    "included": false
+  },
+  {
+    "id": "builtin-423",
+    "term": "Behavior Analysis:  4 domains",
+    "answer": "1. EAB\n2. ABA\n3. Conceptual\n4. Service delivery (behavior technologies)",
+    "chapter": 1,
+    "termNumber": 423,
+    "included": false
+  },
+  {
+    "id": "builtin-424",
+    "term": "Behavioral",
+    "answer": "Characteristic of ABA.  Behavior is the focus, not a hypothetical entity.",
+    "chapter": 1,
+    "termNumber": 424,
+    "included": false
+  },
+  {
+    "id": "builtin-425",
+    "term": "Behavioral Technologies",
+    "answer": "Collection of procedures that have arisen from research and are applied to practical problems by practitioners.  Ex: behavioral momentum is now implemented by many service providers in clinics, schools, and homes",
+    "chapter": 1,
+    "termNumber": 425,
+    "included": false
+  },
+  {
+    "id": "builtin-426",
+    "term": "Behaviorism",
+    "answer": "Philosophy of behavior that assumes behavior is a function of current and past environments as well as genetics.",
+    "chapter": 1,
+    "termNumber": 426,
+    "included": false
+  },
+  {
+    "id": "builtin-427",
+    "term": "Believability",
+    "answer": "The extent to which data represents what it is intended to represent.",
+    "chapter": 3,
+    "termNumber": 427,
+    "included": false
+  },
+  {
+    "id": "builtin-428",
+    "term": "Between subject designs",
+    "answer": "Participants only receive 1 condition (e.g., BL or TX).  The mean of each group is typically reported.",
+    "chapter": 1,
+    "termNumber": 428,
+    "included": false
+  },
+  {
+    "id": "builtin-429",
+    "term": "Conceptually Systematic",
+    "answer": "Characteristic of ABA.  Procedures are tied to the basic principles of  behavior.",
+    "chapter": 1,
+    "termNumber": 429,
+    "included": false
+  },
+  {
+    "id": "builtin-430",
+    "term": "Correlation",
+    "answer": "Two events co-vary.  One may cause the second, the second may cause the first, or both may be caused by a third variable.",
+    "chapter": 1,
+    "termNumber": 430,
+    "included": false
+  },
+  {
+    "id": "builtin-431",
+    "term": "CR",
+    "answer": "Conditioned Response – a response elicited by a conditioned stimulus",
+    "chapter": 2,
+    "termNumber": 431,
+    "included": false
+  },
+  {
+    "id": "builtin-432",
+    "term": "CS",
+    "answer": "Conditioned Stimulus – a neutral stimulus that comes to elicit a conditioned response through pairing with a US",
+    "chapter": 2,
+    "termNumber": 432,
+    "included": false
+  },
+  {
+    "id": "builtin-433",
+    "term": "Dependent Variable",
+    "answer": "Measure of behavior of interest",
+    "chapter": 1,
+    "termNumber": 433,
+    "included": false
+  },
+  {
+    "id": "builtin-434",
+    "term": "Determinism",
+    "answer": "Assumption of Science.  Behavior is caused by some event.",
+    "chapter": 1,
+    "termNumber": 434,
+    "included": false
+  },
+  {
+    "id": "builtin-435",
+    "term": "Empiricism",
+    "answer": "Assumption of Science.  Information is collected by objective observations",
+    "chapter": 1,
+    "termNumber": 435,
+    "included": false
+  },
+  {
+    "id": "builtin-436",
+    "term": "Explanatory Fiction/Circular Reasoning",
+    "answer": "Explaining behavior by using entity that lies within the behavior itself. (Eric is aggressive because he has an aggressive trait.  Evidence of aggressive trait is his aggressive behavior)",
+    "chapter": 1,
+    "termNumber": 436,
+    "included": false
+  },
+  {
+    "id": "builtin-437",
+    "term": "Functional Relation",
+    "answer": "When an independent variable lawfully affects a dependent variable",
+    "chapter": 1,
+    "termNumber": 437,
+    "included": false
+  },
+  {
+    "id": "builtin-438",
+    "term": "Generality",
+    "answer": "Extent to which the results or functional relations will be observed if the experiment is changed in some way.  Can be tested by implementing the Tx with different Ss, settings, behaviors, or species.",
+    "chapter": 1,
+    "termNumber": 438,
+    "included": false
+  },
+  {
+    "id": "builtin-439",
+    "term": "Generalization vs generality",
+    "answer": "Generalization:  Effects of Tx spread to untrained stimuli/responses.  Generality:  The Tx will work in other settings, behaviors, people, species",
+    "chapter": 30,
+    "termNumber": 439,
+    "included": false
+  },
+  {
+    "id": "builtin-440",
+    "term": "Inadequate Explanations of Behavior",
+    "answer": "1. Nominal Fallacy\n2. Teleology\n3. Reification\n4. Circular reasoning",
+    "chapter": 1,
+    "termNumber": 440,
+    "included": false
+  },
+  {
+    "id": "builtin-441",
+    "term": "Independent Variable",
+    "answer": "Treatment or intervention",
+    "chapter": 1,
+    "termNumber": 441,
+    "included": false
+  },
+  {
+    "id": "builtin-442",
+    "term": "Nominal Fallacy",
+    "answer": "Explaining behavior by naming or classifying it (The behavior is PICA to explain eating inedible objects)",
+    "chapter": 1,
+    "termNumber": 442,
+    "included": false
+  },
+  {
+    "id": "builtin-443",
+    "term": "Operant",
+    "answer": "A collection of responses with a common effect on the environment.  Ex: child may do a variety of things to obtain attention.",
+    "chapter": 2,
+    "termNumber": 443,
+    "included": true
+  },
+  {
+    "id": "builtin-444",
+    "term": "Philosophic Doubt",
+    "answer": "Assumption of Science. Conclusions of science are tentative and can be revised as new data comes to light.",
+    "chapter": 1,
+    "termNumber": 444,
+    "included": false
+  },
+  {
+    "id": "builtin-445",
+    "term": "Pica",
+    "answer": "Consuming inedible items (e.g., screws, bolts, small toys)",
+    "chapter": null,
+    "termNumber": 445,
+    "included": false
+  },
+  {
+    "id": "builtin-446",
+    "term": "Reification",
+    "answer": "Explaining behavior by appealing to non-existent entity (ID, ego, self, etc.)",
+    "chapter": 1,
+    "termNumber": 446,
+    "included": false
+  },
+  {
+    "id": "builtin-447",
+    "term": "Scientific Manipulation",
+    "answer": "Characteristic of Science.  Systematically manipulating an event to see effects on behavior",
+    "chapter": 1,
+    "termNumber": 447,
+    "included": false
+  },
+  {
+    "id": "builtin-448",
+    "term": "Technological",
+    "answer": "Characteristic of ABA.  Provides written detail of procedures to permit replication of techniques in other settings.",
+    "chapter": 1,
+    "termNumber": 448,
+    "included": false
+  },
+  {
+    "id": "builtin-449",
+    "term": "Teleology",
+    "answer": "Explaining behavior by appealing to future, unexperienced events (I am doing my homework to graduate)",
+    "chapter": 1,
+    "termNumber": 449,
+    "included": false
+  },
+  {
+    "id": "builtin-450",
+    "term": "UR",
+    "answer": "Unconditioned Response- response elicited by an unconditioned stimulus",
+    "chapter": 2,
+    "termNumber": 450,
+    "included": false
+  },
+  {
+    "id": "builtin-451",
+    "term": "US",
+    "answer": "Unconditioned Stimulus – stimulus that elicits a behavior w/o any history.",
+    "chapter": 2,
+    "termNumber": 451,
+    "included": false
+  },
+  {
+    "id": "builtin-452",
+    "term": "Behavior",
+    "answer": "Interaction of a person and his/her environment.  Action of the muscles and/or glands",
+    "chapter": 2,
+    "termNumber": 452,
+    "included": false
+  },
+  {
+    "id": "builtin-453",
+    "term": "Functional Response Definition",
+    "answer": "Includes the topography of response as well as the functional antecedents and/or consequences.",
+    "chapter": 3,
+    "termNumber": 453,
+    "included": false
+  },
+  {
+    "id": "builtin-454",
+    "term": "Fundamental Characteristics of Behavior",
+    "answer": "1. Temporal locus  \n2. Temporal extent  \n3. Repeatability\n\nRate, Latency, Duration, and IRT are derived from these.",
+    "chapter": 4,
+    "termNumber": 454,
+    "included": false
+  },
+  {
+    "id": "builtin-455",
+    "term": "Negative Punisher",
+    "answer": "Stimulus that when withdrawn after a behavior, decreases the rate of the behavior.  Note that IRT will increase.",
+    "chapter": 2,
+    "termNumber": 455,
+    "included": false
+  },
+  {
+    "id": "builtin-456",
+    "term": "Negative Reinforcement",
+    "answer": "Process in which a stimulus is terminated after a behavior, and the rate of the behavior increases.",
+    "chapter": 2,
+    "termNumber": 456,
+    "included": false
+  },
+  {
+    "id": "builtin-457",
+    "term": "Negative Reinforcer",
+    "answer": "Stimulus that when withdrawn after a behavior, increases the rate of the behavior.  Note that IRT will decrease.",
+    "chapter": 2,
+    "termNumber": 457,
+    "included": true
+  },
+  {
+    "id": "builtin-458",
+    "term": "Positive Punisher",
+    "answer": "A stimulus that when presented after a behavior, decreases the rate of behavior.  The IRTs would increase.",
+    "chapter": 2,
+    "termNumber": 458,
+    "included": true
+  },
+  {
+    "id": "builtin-459",
+    "term": "Positive Reinforcement",
+    "answer": "Process in which a stimulus is presented after a behavior and the rate of the behavior increases.  The IRTs would decrease.",
+    "chapter": 2,
+    "termNumber": 459,
+    "included": true
+  },
+  {
+    "id": "builtin-460",
+    "term": "Positive Reinforcer",
+    "answer": "Stimulus that when presented after a behavior, increases the rate of the behavior.  Note that the IRT will decrease.",
+    "chapter": 2,
+    "termNumber": 460,
+    "included": false
+  },
+  {
+    "id": "builtin-461",
+    "term": "Respondent Extinction",
+    "answer": "Decrease in the strength of a CR as a result of presenting the CS alone",
+    "chapter": 2,
+    "termNumber": 461,
+    "included": false
+  },
+  {
+    "id": "builtin-462",
+    "term": "Response class",
+    "answer": "A collection of responses that has a common characteristic:  For example, topographical class or functional class",
+    "chapter": 1,
+    "termNumber": 462,
+    "included": false
+  },
+  {
+    "id": "builtin-463",
+    "term": "Stimulus",
+    "answer": "An energy change in the environment that affects a person through his/her senses.",
+    "chapter": 2,
+    "termNumber": 463,
+    "included": false
+  },
+  {
+    "id": "builtin-464",
+    "term": "Stimulus Class",
+    "answer": "Collection of stimuli with a common characteristic.  Ex: any stimulus that evokes tantrums, or any stimulus of a certain wavelength.",
+    "chapter": 2,
+    "termNumber": 464,
+    "included": false
+  },
+  {
+    "id": "builtin-465",
+    "term": "Topographical Response Definition",
+    "answer": "Includes only description of the form, or topography, of the response.",
+    "chapter": 2,
+    "termNumber": 465,
+    "included": false
+  },
+  {
+    "id": "builtin-466",
+    "term": "Age appropriate goals",
+    "answer": "Goals that relate to a person's chronological age.  For example, a 25 year old male might learn job skills and a 4 year old female might learn toileting.",
+    "chapter": 3,
+    "termNumber": 466,
+    "included": false
+  },
+  {
+    "id": "builtin-467",
+    "term": "Bias of partial interval recording, whole interval recording and momentary time sampling",
+    "answer": "Partial interval: overestimates rates, used for reduction targets\nWhole interval: underestimates rates, used for acquisition skills\nMomentary time sampling:  no systematic bias",
+    "chapter": 4,
+    "termNumber": 467,
+    "included": false
+  },
+  {
+    "id": "builtin-468",
+    "term": "Constructional Approach",
+    "answer": "Approach to decreasing inappropriate behavior by focusing on building new behaviors to replace inappropriate behaviors (replacement skills)",
+    "chapter": 3,
+    "termNumber": 468,
+    "included": false
+  },
+  {
+    "id": "builtin-469",
+    "term": "Duration",
+    "answer": "Time between the beginning of a response and the end of that response",
+    "chapter": 4,
+    "termNumber": 469,
+    "included": false
+  },
+  {
+    "id": "builtin-470",
+    "term": "Duration Recording",
+    "answer": "Using some timing device, recording the length of time of the behavior/response",
+    "chapter": 4,
+    "termNumber": 470,
+    "included": false
+  },
+  {
+    "id": "builtin-471",
+    "term": "Foundational Skills",
+    "answer": "Skill that must be taught before other skills can be taught",
+    "chapter": 3,
+    "termNumber": 471,
+    "included": false
+  },
+  {
+    "id": "builtin-472",
+    "term": "Frequency",
+    "answer": "Number of times a behavior occurs (Ex: count)",
+    "chapter": 3,
+    "termNumber": 472,
+    "included": true
+  },
+  {
+    "id": "builtin-473",
+    "term": "Functional Goals",
+    "answer": "Goals that will improve the life of the client and allow more independence and choice.  If not accomplished, a caregiver will be required to perform the activity for the person.",
+    "chapter": 3,
+    "termNumber": 473,
+    "included": false
+  },
+  {
+    "id": "builtin-474",
+    "term": "Habilitation",
+    "answer": "During the course of skill development, the extent to which reinforcers are maximized, and punishers are minimized.",
+    "chapter": 3,
+    "termNumber": 474,
+    "included": false
+  },
+  {
+    "id": "builtin-475",
+    "term": "Habituation",
+    "answer": "When a US is frequently in a period of time, the UR will decrease in magnitude, or increase latency.",
+    "chapter": 2,
+    "termNumber": 475,
+    "included": false
+  },
+  {
+    "id": "builtin-476",
+    "term": "IRT - Interresponse Time",
+    "answer": "Time between end of a response and the beginning of another response.",
+    "chapter": 4,
+    "termNumber": 476,
+    "included": false
+  },
+  {
+    "id": "builtin-477",
+    "term": "Kinds of descriptive assessments",
+    "answer": "1. Direct observation\n2. Naturalistic observation\n3. ABC data",
+    "chapter": 27,
+    "termNumber": 477,
+    "included": false
+  },
+  {
+    "id": "builtin-478",
+    "term": "Latency",
+    "answer": "Duration of time between a stimulus and the beginning of response",
+    "chapter": 4,
+    "termNumber": 478,
+    "included": true
+  },
+  {
+    "id": "builtin-479",
+    "term": "Multiple effects of a stimulus",
+    "answer": "Stimuli have multiple effects.  For example, a food reinforcer increases the future frequency of behavior, but may also elicit salivation, or condition other stimuli to be conditioned reinforcers or CSs.",
+    "chapter": 2,
+    "termNumber": 479,
+    "included": false
+  },
+  {
+    "id": "builtin-480",
+    "term": "Multiple functions of a behavior",
+    "answer": "A given behavior may be belong to more than one operant.  For example, hand waving might be maintained by attention, and it might also be maintained by access to an activity.",
+    "chapter": 2,
+    "termNumber": 480,
+    "included": false
+  },
+  {
+    "id": "builtin-481",
+    "term": "Normalization",
+    "answer": "The use of more typical environments, procedures, and goals in treatment.",
+    "chapter": 3,
+    "termNumber": 481,
+    "included": false
+  },
+  {
+    "id": "builtin-482",
+    "term": "Operant Conditioning",
+    "answer": "Kind of learning where a class of responses (operant) is modified by changing its consequences.",
+    "chapter": 2,
+    "termNumber": 482,
+    "included": false
+  },
+  {
+    "id": "builtin-483",
+    "term": "Partial Interval Recording",
+    "answer": "Recording procedure in which a time period is divided into bins.  A \"+\" is recorded in each bin if a behavior occurs at all during that bin.  A \"-\" is recorded if the behavior did not occur at all during that bin.  This recording procedure tends to be an",
+    "chapter": 4,
+    "termNumber": 483,
+    "included": false
+  },
+  {
+    "id": "builtin-484",
+    "term": "Permanent Product Recording",
+    "answer": "Recording the effects of the behavior, not the behavior itself (Ex: bed made)",
+    "chapter": 4,
+    "termNumber": 484,
+    "included": false
+  },
+  {
+    "id": "builtin-485",
+    "term": "Rate",
+    "answer": "#of responses/ time  (Ex:  responses/minute)",
+    "chapter": 4,
+    "termNumber": 485,
+    "included": true
+  },
+  {
+    "id": "builtin-486",
+    "term": "Reactivity",
+    "answer": "Extent to which the act of recording influences behavior (behavior changes when being observed)",
+    "chapter": 4,
+    "termNumber": 486,
+    "included": false
+  },
+  {
+    "id": "builtin-487",
+    "term": "Sequence Analysis",
+    "answer": "Identifying events that typically precede and follow a target behavior.  Also called ABC Analysis.",
+    "chapter": 27,
+    "termNumber": 487,
+    "included": false
+  },
+  {
+    "id": "builtin-488",
+    "term": "Topography of Response",
+    "answer": "Form of response (e.g. kicking, hitting,)",
+    "chapter": 2,
+    "termNumber": 488,
+    "included": true
+  },
+  {
+    "id": "builtin-489",
+    "term": "Whole Interval Recording",
+    "answer": "A recording procedure in which a time period is divided into bins.  A \"+\" is recorded if the behavior occurred during the entire bin.  A \"-\" is recorded if the behavior did not occur during the entire bin.  This recording is an underestimate.  Thus, it of",
+    "chapter": 4,
+    "termNumber": 489,
+    "included": false
+  },
+  {
+    "id": "builtin-490",
+    "term": "ABC recording",
+    "answer": "Recording antecedent, behavior, consequence streams.  Used in descriptive assessments.",
+    "chapter": 4,
+    "termNumber": 490,
+    "included": false
+  },
+  {
+    "id": "builtin-491",
+    "term": "Accuracy",
+    "answer": "When data are consistent with  \"true values.\"",
+    "chapter": 5,
+    "termNumber": 491,
+    "included": false
+  },
+  {
+    "id": "builtin-492",
+    "term": "Adaptation",
+    "answer": "Upon introduction of novel stimuli, behavior initially changes, but gradually changes back to pre-novel stimuli introduction",
+    "chapter": null,
+    "termNumber": 492,
+    "included": false
+  },
+  {
+    "id": "builtin-493",
+    "term": "Analogue FA",
+    "answer": "Setup conditions that are not in a natural setting, but are setup to mimic real-life situations",
+    "chapter": 27,
+    "termNumber": 493,
+    "included": false
+  },
+  {
+    "id": "builtin-494",
+    "term": "Analogue FA conditions",
+    "answer": "Control, attention, escape from task, alone, tangible",
+    "chapter": 27,
+    "termNumber": 494,
+    "included": false
+  },
+  {
+    "id": "builtin-495",
+    "term": "Behavioral Assessment",
+    "answer": "Assessment that examines the person's entire life in order to identify possible causes of the behavior in question.  You may use descriptive assessment methods or functional analyses.",
+    "chapter": 27,
+    "termNumber": 495,
+    "included": false
+  },
+  {
+    "id": "builtin-496",
+    "term": "Behavioral assessment:  3 general kinds",
+    "answer": "1. Functional analysis\n2. Descriptive assessment\n3. Indirect assessment",
+    "chapter": 27,
+    "termNumber": 496,
+    "included": false
+  },
+  {
+    "id": "builtin-497",
+    "term": "Direct Observation",
+    "answer": "Observing behavior directly, instead of assessing through testing",
+    "chapter": 4,
+    "termNumber": 497,
+    "included": false
+  },
+  {
+    "id": "builtin-498",
+    "term": "Function of behavior",
+    "answer": "Refers to the maintaining reinforcer",
+    "chapter": 27,
+    "termNumber": 498,
+    "included": false
+  },
+  {
+    "id": "builtin-499",
+    "term": "Functional Analysis",
+    "answer": "Manipulation of environmental conditions to determine a functional relation between problem behavior and independent variables.  Often, the goal is to confirm an hypothesis developed in descriptive assessment.",
+    "chapter": 27,
+    "termNumber": 499,
+    "included": false
+  },
+  {
+    "id": "builtin-500",
+    "term": "Inter-observer agreement (IOA)",
+    "answer": "Extent to which two observer's data agree.  It is said to estimate accuracy.",
+    "chapter": 5,
+    "termNumber": 500,
+    "included": false
+  },
+  {
+    "id": "builtin-501",
+    "term": "Inter-observer agreement (IOA):  Binary data",
+    "answer": "(# trials with agreement/# trials) x 100",
+    "chapter": 5,
+    "termNumber": 501,
+    "included": false
+  },
+  {
+    "id": "builtin-502",
+    "term": "Inter-observer agreement (IOA):  exact count per interval",
+    "answer": "1. Divide observation time into intervals\n2. Count # of intervals in which there is exact agreement\n3. Compute IOA for each interval by the (# of exact  agreements/# total intervals) x 100",
+    "chapter": 5,
+    "termNumber": 502,
+    "included": false
+  },
+  {
+    "id": "builtin-503",
+    "term": "Inter-observer agreement (IOA):  mean count per interval",
+    "answer": "1. Divide observation time into intervals  \n2. Compute IOA for each interval by dividing (small/large) x 100  \n3. Average all interval IOA",
+    "chapter": 5,
+    "termNumber": 503,
+    "included": false
+  },
+  {
+    "id": "builtin-504",
+    "term": "Inter-observer agreement (IOA):  Scored (or Occurrence)",
+    "answer": "(# of agreements that behavior occurred)/(# bins where both score + and # bins where 1 scored +) - bins where both score - are excluded",
+    "chapter": 5,
+    "termNumber": 504,
+    "included": false
+  },
+  {
+    "id": "builtin-505",
+    "term": "Inter-observer agreement (IOA):  Scored (or Occurrence) used for…",
+    "answer": "It is a conservative measure of agreement for low rate behavior",
+    "chapter": 5,
+    "termNumber": 505,
+    "included": false
+  },
+  {
+    "id": "builtin-506",
+    "term": "Inter-observer agreement (IOA):  total count",
+    "answer": "(Smaller count/larger count) X 100",
+    "chapter": 5,
+    "termNumber": 506,
+    "included": false
+  },
+  {
+    "id": "builtin-507",
+    "term": "Inter-observer agreement (IOA):  unscored (or non-occurrence)",
+    "answer": "(# of agreements that behavior did not occur)/(# bins where both score - and  # bins where 1 scored -) - bins where both score + are excluded",
+    "chapter": 5,
+    "termNumber": 507,
+    "included": false
+  },
+  {
+    "id": "builtin-508",
+    "term": "Inter-observer agreement (IOA):  Unscored (or non-occurrence) used for…",
+    "answer": "It is a conservative measure of agreement for high rate behavior",
+    "chapter": 5,
+    "termNumber": 508,
+    "included": false
+  },
+  {
+    "id": "builtin-509",
+    "term": "Observer drift",
+    "answer": "Tendency for an observer's recording to gradually change across time.  It can be pinpointed to the time when an observer's scores differ from those of a 2nd observer.  One cause is a change in response definition.",
+    "chapter": 4,
+    "termNumber": 509,
+    "included": false
+  },
+  {
+    "id": "builtin-510",
+    "term": "Positive programming for attention-maintained behavior",
+    "answer": "Mand, waiting, selecting alternatives, DRO/DRI, Premack Principle where attention is earned.",
+    "chapter": 27,
+    "termNumber": 510,
+    "included": false
+  },
+  {
+    "id": "builtin-511",
+    "term": "Positive programming for escape-maintained behavior",
+    "answer": "Mand, tolerance training, DRO/DRI, Premack Principle where break is earned.",
+    "chapter": 27,
+    "termNumber": 511,
+    "included": false
+  },
+  {
+    "id": "builtin-512",
+    "term": "Positive programming for tangible-maintained behavior",
+    "answer": "Mand, waiting, selecting alternatives, DRO/DRI, Premack Principle where tangible is earned.",
+    "chapter": 27,
+    "termNumber": 512,
+    "included": false
+  },
+  {
+    "id": "builtin-513",
+    "term": "Recalibration",
+    "answer": "Re-training an observer to increase accuracy, used to decrease/correct observer drift",
+    "chapter": 5,
+    "termNumber": 513,
+    "included": false
+  },
+  {
+    "id": "builtin-514",
+    "term": "Reliability",
+    "answer": "Extent to which a given measurement result will be obtained with the same sample of behavior - consistency!",
+    "chapter": 5,
+    "termNumber": 514,
+    "included": false
+  },
+  {
+    "id": "builtin-515",
+    "term": "Scatterplot",
+    "answer": "A chart that shows occurrences of behavior in a given time frame",
+    "chapter": 27,
+    "termNumber": 515,
+    "included": false
+  },
+  {
+    "id": "builtin-516",
+    "term": "Training observers",
+    "answer": "Observers can be trained through explanation, video tapes, modeling and feedback.  They can be calibrated using behaviors for which frequencies are known.",
+    "chapter": 5,
+    "termNumber": 516,
+    "included": false
+  },
+  {
+    "id": "builtin-517",
+    "term": "True Values",
+    "answer": "Data in which extraordinary measures have been taken to eliminate sources of error.  True values hould approximate the true measure of the behavior in the sample.",
+    "chapter": 5,
+    "termNumber": 517,
+    "included": false
+  },
+  {
+    "id": "builtin-518",
+    "term": "Bar Graphs (Histograms)",
+    "answer": "Graphs used to show the average # of behaviors or other measures such as # in a category.  Not appropriate for showing daily frequencies in real time.",
+    "chapter": 6,
+    "termNumber": 518,
+    "included": false
+  },
+  {
+    "id": "builtin-519",
+    "term": "Characteristics of Graphed Data",
+    "answer": "Level, Trend and Variability",
+    "chapter": 6,
+    "termNumber": 519,
+    "included": false
+  },
+  {
+    "id": "builtin-520",
+    "term": "Condition Change Line",
+    "answer": "Vertical line on graphs to indicate change.  Solid line for planned treatment/condition changes.  Dashed line for unplanned environment changes (Ex: changes in staff).",
+    "chapter": 6,
+    "termNumber": 520,
+    "included": false
+  },
+  {
+    "id": "builtin-521",
+    "term": "Cumulative Record",
+    "answer": "Graph that shows the cumulative number of responses over time.  Rate of response is represented by the slope of the line.",
+    "chapter": 6,
+    "termNumber": 521,
+    "included": false
+  },
+  {
+    "id": "builtin-522",
+    "term": "Equal interval graph",
+    "answer": "A graph in which one unit on the scale represents the same magnitude of change being measured across the whole range of the scale.  For example, the distance on the graph between 1 and 2 is the same distance as between 50 and 51.  Both are an increase of",
+    "chapter": 6,
+    "termNumber": 522,
+    "included": false
+  },
+  {
+    "id": "builtin-523",
+    "term": "Graph",
+    "answer": "Visual display of data, used for decision making and comparisons of different treatments",
+    "chapter": 6,
+    "termNumber": 523,
+    "included": false
+  },
+  {
+    "id": "builtin-524",
+    "term": "Level",
+    "answer": "General height of the points, typically described by median/mean of points",
+    "chapter": 6,
+    "termNumber": 524,
+    "included": false
+  },
+  {
+    "id": "builtin-525",
+    "term": "Steady state",
+    "answer": "When data show no trend according to some criterion (e.g., no visible trend over 5 sessions)",
+    "chapter": 10,
+    "termNumber": 525,
+    "included": false
+  },
+  {
+    "id": "builtin-526",
+    "term": "Stimuli (exteroceptive)",
+    "answer": "Stimuli in the external environment",
+    "chapter": 2,
+    "termNumber": 526,
+    "included": false
+  },
+  {
+    "id": "builtin-527",
+    "term": "Stimuli (interoceptive)",
+    "answer": "Stimuli in the internal environment",
+    "chapter": 2,
+    "termNumber": 527,
+    "included": false
+  },
+  {
+    "id": "builtin-528",
+    "term": "Stimuli (Kinds)",
+    "answer": "Exteroceptive, interoceptive, proprioceptive",
+    "chapter": 2,
+    "termNumber": 528,
+    "included": false
+  },
+  {
+    "id": "builtin-529",
+    "term": "Stimuli (proprioceptive)",
+    "answer": "Stimuli arising from movement",
+    "chapter": 2,
+    "termNumber": 529,
+    "included": false
+  },
+  {
+    "id": "builtin-530",
+    "term": "Transition state",
+    "answer": "When there is a trend in the data, and there is presumably an ongoing behavioral process that is changing the strength of the behavior.  Transition states occur between steady states.",
+    "chapter": 7,
+    "termNumber": 530,
+    "included": false
+  },
+  {
+    "id": "builtin-531",
+    "term": "Trend",
+    "answer": "Direction of the data points, described by a \"trend line\"",
+    "chapter": 6,
+    "termNumber": 531,
+    "included": false
+  },
+  {
+    "id": "builtin-532",
+    "term": "Variability",
+    "answer": "Extent to which the data points vary from day to day, often expressed as the range of data points in a steady state.  In transition state, variability around trend line.",
+    "chapter": 6,
+    "termNumber": 532,
+    "included": false
+  },
+  {
+    "id": "builtin-533",
+    "term": "Concurrent Schedule (Conc)",
+    "answer": "Two or more schedules are available simultaneously that can be selected (choose to work in workshop or watch TV)",
+    "chapter": 13,
+    "termNumber": 533,
+    "included": false
+  },
+  {
+    "id": "builtin-534",
+    "term": "Establishing Operation",
+    "answer": "1.  Increases the reinforcing effectiveness of some stimulus \n\n2.  Increases the strength of the behavior that has produced that stimulus in the past",
+    "chapter": 16,
+    "termNumber": 534,
+    "included": false
+  },
+  {
+    "id": "builtin-535",
+    "term": "Generalized Conditioned Reinforcer",
+    "answer": "Reinforcer that is effective in many situations because it can be exchanged for a wide variety of backup reinforcers.  Ex: tokens, money",
+    "chapter": 11,
+    "termNumber": 535,
+    "included": false
+  },
+  {
+    "id": "builtin-536",
+    "term": "Multiple Schedule (Mult)",
+    "answer": "Two or more schedules that are presented successively each with their own signal (1st period has FR10 attention for tasks, 2nd period with different teacher has Ext for task completion). (Mult FR 10 Ext)",
+    "chapter": 13,
+    "termNumber": 536,
+    "included": false
+  },
+  {
+    "id": "builtin-537",
+    "term": "Observation in preference assessment",
+    "answer": "Observe a person in free time and record what they do",
+    "chapter": 11,
+    "termNumber": 537,
+    "included": false
+  },
+  {
+    "id": "builtin-538",
+    "term": "Preference assessment:  Paired choice",
+    "answer": "Present person with pairs of potential reinforcers, and note which one is selected.  Pair each potential reinforcer with all of the others on the list of possible potential reinforcers.  Graph the # times each item is selected.",
+    "chapter": 11,
+    "termNumber": 538,
+    "included": false
+  },
+  {
+    "id": "builtin-539",
+    "term": "Preference assessment:  Multiple stimulus with replacement",
+    "answer": "Present an array and record how often an item is selected.  After each item is selected, put back into array or replenish with another similar item, as with food.",
+    "chapter": 11,
+    "termNumber": 539,
+    "included": false
+  },
+  {
+    "id": "builtin-540",
+    "term": "Preference assessment:  Multiple stimulus without replacement",
+    "answer": "Present an array and record how often an item is selected.  Each time an item is selected, remove from array until all are selected.  Good for rank ordering stimuli.",
+    "chapter": 11,
+    "termNumber": 540,
+    "included": false
+  },
+  {
+    "id": "builtin-541",
+    "term": "Preference assessment:  Single stimulus",
+    "answer": "Present a single stimulus, and see if person contacts it.  Or, record the latency or duration of contact.",
+    "chapter": 11,
+    "termNumber": 541,
+    "included": false
+  },
+  {
+    "id": "builtin-542",
+    "term": "Preference Assessment:  Types",
+    "answer": "1. Interviews\n2. Free operant - see what person contacts in free time\n3. Single stimulus\n4. Paired choice\n5. Arrays with/without replacement",
+    "chapter": 11,
+    "termNumber": 542,
+    "included": false
+  },
+  {
+    "id": "builtin-543",
+    "term": "Premack Principle",
+    "answer": "Procedure in which high probability behavior can be used to reinforce low probability behavior and low probability behavior can be used to punish high probability behavior",
+    "chapter": 11,
+    "termNumber": 543,
+    "included": false
+  },
+  {
+    "id": "builtin-544",
+    "term": "Reinforcer (Conditioned)",
+    "answer": "A consequence that increases (or decreases) the rate of behavior because it has been paired with another reinforcer (or punisher)",
+    "chapter": 2,
+    "termNumber": 544,
+    "included": false
+  },
+  {
+    "id": "builtin-545",
+    "term": "Reinforcer (unconditioned)",
+    "answer": "A reinforcer that is effective without previous experience.  Ex: food, drinks",
+    "chapter": 2,
+    "termNumber": 545,
+    "included": false
+  },
+  {
+    "id": "builtin-546",
+    "term": "Reinforcer Assessment Procedures",
+    "answer": "Test to see if the stimulus when presented contingent on a behavior, will increase the rate of the behavior - can use withdrawal design, reversal design, concurrent schedules",
+    "chapter": 11,
+    "termNumber": 546,
+    "included": false
+  },
+  {
+    "id": "builtin-547",
+    "term": "Reversal Design",
+    "answer": "A design in which an intervention is applied to behavior, then removed and a second intervention is applied to the same behavior (ex: NCR), and then the second intervention is removed and the first is re-applied.",
+    "chapter": 8,
+    "termNumber": 547,
+    "included": false
+  },
+  {
+    "id": "builtin-548",
+    "term": "Withdrawal Design",
+    "answer": "Design in which baseline conditions are alternated with intervention conditions.  Minimum alternations are ABA or BAB.",
+    "chapter": 8,
+    "termNumber": 548,
+    "included": false
+  },
+  {
+    "id": "builtin-549",
+    "term": "Yoking:  within subject",
+    "answer": "Within subject yoking:  when some parameter in a condition is used in another condition for a subject (e.g., the rate of reinforcement in a FR 5 condition is used to program a FT schedule in another condition).",
+    "chapter": 8,
+    "termNumber": 549,
+    "included": false
+  },
+  {
+    "id": "builtin-550",
+    "term": "Principles of behavior",
+    "answer": "Functional relations with generality across species.  Examples: +/- reinforcement and punishment; SD, S-delta, EO, AO",
+    "chapter": 2,
+    "termNumber": 550,
+    "included": false
+  },
+  {
+    "id": "builtin-551",
+    "term": "Behavioral cusp",
+    "answer": "A skill that when learned, will provide access to wide variety of reinforcers and preferred activities:  a \"game changer\"",
+    "chapter": 3,
+    "termNumber": 551,
+    "included": false
+  },
+  {
+    "id": "builtin-552",
+    "term": "Punishment contrast",
+    "answer": "When punishment is withdrawn, behavior returns (perhaps termporarily) to a level higher than BL",
+    "chapter": 14,
+    "termNumber": 552,
+    "included": false
+  },
+  {
+    "id": "builtin-553",
+    "term": "Pivotal skill",
+    "answer": "Skills that when learned, will produce changes in other adaptive skills in untrained environments.  For example, if a person learns to approach other people, this may produce changes in their mand repertoire because of the contingencies in play when the person is interacting with another person.",
+    "chapter": 3,
+    "termNumber": 553,
+    "included": false
+  },
+  {
+    "id": "builtin-554",
+    "term": "Masking (also called blocking)",
+    "answer": "When stimulus control by a stimulus (e.g., teacher instruction) is prevented by the presence of another stimulus (e.g., classroom distractions)",
+    "chapter": null,
+    "termNumber": 554,
+    "included": false
+  },
+  {
+    "id": "builtin-555",
+    "term": "Overshadowing",
+    "answer": "When the development of stimulus control (e.g., the letter \"A\") is prevented by the presence of another stimulus (e.g., a picture of an apple).",
+    "chapter": null,
+    "termNumber": 555,
+    "included": false
+  },
+  {
+    "id": "builtin-556",
+    "term": "Observing behavior",
+    "answer": "Behavior that results in exposure to relevant stimuli.  For example, having a child point to pictures before asking them to point to one of them.",
+    "chapter": null,
+    "termNumber": 556,
+    "included": false
+  },
+  {
+    "id": "builtin-557",
+    "term": "Differential observing response (DOR)",
+    "answer": "Behavior that results in exposure to relevant stimuli.  But the behavior differs in topography, depending on the stimulus.  For example, having a child tact pictures before asking them to point to one of them.",
+    "chapter": null,
+    "termNumber": 557,
+    "included": false
+  },
+  {
+    "id": "builtin-558",
+    "term": "Commitment response",
+    "answer": "In self control procedures (e.g., self reinforcement), the person sets up future contingencies that will potentiall affect behavior.  An example: a person turns over $100 to an associate that is earned back by not smoking in the associate's presence.",
+    "chapter": null,
+    "termNumber": 558,
+    "included": false
+  },
+  {
+    "id": "builtin-559",
+    "term": "Joint attention",
+    "answer": "When a therapist alerts a learner the presence of an object using gestures/eye gazes, and the learner orientes toward the object.  Sometimes called \"shared focus\"",
+    "chapter": null,
+    "termNumber": 559,
+    "included": false
+  },
+  {
+    "id": "builtin-560",
+    "term": "Goals of science",
+    "answer": "Description, prediction, control",
+    "chapter": null,
+    "termNumber": 560,
+    "included": false
+  }
+]
