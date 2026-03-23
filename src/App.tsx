@@ -3,16 +3,18 @@ import { useCards } from '@/hooks/useCards'
 import { useSessions } from '@/hooks/useSessions'
 import { CardLibrary } from '@/components/CardLibrary'
 import { SessionView } from '@/components/SessionView'
+import { MultipleChoiceView } from '@/components/MultipleChoiceView'
 import { HistoryView } from '@/components/HistoryView'
 import { SCCChart } from '@/components/SCCChart'
 import { cn } from '@/lib/utils'
-import { BookOpen, Play, BarChart2, ClipboardList } from 'lucide-react'
+import { BookOpen, Play, HelpCircle, BarChart2, ClipboardList } from 'lucide-react'
 
-type Tab = 'library' | 'session' | 'history' | 'chart'
+type Tab = 'library' | 'session' | 'quiz' | 'history' | 'chart'
 
 const TABS: { id: Tab; label: string; icon: React.ReactNode }[] = [
   { id: 'library', label: 'Card Library', icon: <BookOpen size={16} /> },
   { id: 'session', label: 'Practice', icon: <Play size={16} /> },
+  { id: 'quiz', label: 'Quiz', icon: <HelpCircle size={16} /> },
   { id: 'history', label: 'History', icon: <ClipboardList size={16} /> },
   { id: 'chart', label: 'Chart', icon: <BarChart2 size={16} /> },
 ]
@@ -89,6 +91,9 @@ export default function App() {
         )}
         {tab === 'session' && (
           <SessionView activeDeck={activeDeck} onSessionComplete={handleSessionComplete} />
+        )}
+        {tab === 'quiz' && (
+          <MultipleChoiceView activeDeck={activeDeck} />
         )}
         {tab === 'history' && (
           <HistoryView
